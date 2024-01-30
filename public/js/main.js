@@ -8,6 +8,7 @@ import data from '../molengeek.json' assert { type: "json" }
 
 INSTANCE.myBurger.addEventListener("click",()=>{
   INSTANCE.allMyLinks.classList.toggle("hide")
+  console.log("hi")
 })
 
 //add MolenGeek logo to my Navbar
@@ -73,25 +74,29 @@ carouselBtns.forEach(element => {
   })
 });
 
+//FOOTER Logo Molengeek
+
+document.querySelector(".footer-logo").src = data.molengeekLogo
+
 //Address
 
-let pAddress = document.createElement("p")
+// let pAddress = document.createElement("p")
 
-pAddress.innerText = data.molengeekInfo.address
+// pAddress.innerText = data.molengeekInfo.address
 
-document.querySelector(".my-address").appendChild(pAddress)
+// document.querySelector(".my-address").appendChild(pAddress)
 
-let pMail = document.createElement("p")
+// let pMail = document.createElement("p")
 
-pMail.innerText = data.molengeekInfo.email
+// pMail.innerText = data.molengeekInfo.email
 
-document.querySelector(".e-mail-phone").appendChild(pMail)
+// document.querySelector(".e-mail-phone").appendChild(pMail)
 
-let pPhone = document.createElement("p")
+// let pPhone = document.createElement("p")
 
-pPhone.innerText = data.molengeekInfo.phone
+// pPhone.innerText = data.molengeekInfo.phone
 
-document.querySelector(".e-mail-phone").appendChild(pPhone)
+// document.querySelector(".e-mail-phone").appendChild(pPhone)
 
 //Social Media
 
@@ -109,7 +114,7 @@ Object.values(data.reseauxSociaux).forEach(element => {
 
   newLink.appendChild(newImg)
 
-  document.querySelector(".footer-part-three").appendChild(newLink)
+  document.querySelector(".upper-footer").appendChild(newLink)
 
 });
 
@@ -139,3 +144,127 @@ INSTANCE.myScrollbutton.addEventListener("click",()=>{
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 })
+
+//NAVBAR WITH DROPDOWN
+
+INSTANCE.btnDropDown.addEventListener("click",()=>{
+  INSTANCE.myDropDown.classList.toggle("show");
+  console.log(INSTANCE.myDropDown)
+})
+
+//EVENTS FOR EVENTS SECTION
+
+let eachEvent
+
+let eachDate
+
+let eachBar
+
+let eventPone
+
+let eventPtwo
+
+for (let i = 0; i <= 2; i++) {
+
+  //create DIV for each-event
+  eachEvent = document.createElement("div")
+
+  eachEvent.setAttribute("class","each-event")
+
+  //create DIV for each-date within DIV each-event
+
+  eachDate = document.createElement("div")
+
+  eachDate.setAttribute("class","date")
+
+  eventPone = document.createElement("p")
+
+  eventPone.innerText = data.formations.seancesInfos[i].date
+
+  eachDate.appendChild(eventPone)
+
+  eachEvent.appendChild(eachDate)
+
+  //create DIV for each-bar with name of the event
+
+  eachBar = document.createElement("div")
+
+  eachBar.setAttribute("class","my-bar")
+
+  eventPtwo = document.createElement("p")
+
+  eventPtwo.innerText = data.formations.seancesInfos[i].nom.toLocaleUpperCase()
+
+  eachBar.appendChild(eventPtwo)
+
+  eachEvent.appendChild(eachBar)
+
+  INSTANCE.myEventContainer.appendChild(eachEvent)
+
+  if(data.formations.seancesInfos[i].date == "19/02"){
+    eachBar.style.width = "300px"
+  } else if(data.formations.seancesInfos[i].date == "22/02"){
+    eachBar.style.width = "400px"
+  } else if(data.formations.seancesInfos[i].date == "26/02"){
+    eachBar.style.width = "500px"
+  } else if(data.formations.seancesInfos[i].date == "29/02"){
+    eachBar.style.width = "600px"
+  } else if(data.formations.seancesInfos[i].date == "04/03"){
+    eachBar.style.width = "700px"
+  } else if(data.formations.seancesInfos[i].date == "07/03"){
+    eachBar.style.width = "800px"
+  }
+}
+
+// data.formations.seancesInfos.forEach(element => {
+
+//   //create DIV for each-event
+//   eachEvent = document.createElement("div")
+
+//   eachEvent.setAttribute("class","each-event")
+
+//   //create DIV for each-date within DIV each-event
+
+//   eachDate = document.createElement("div")
+
+//   eachDate.setAttribute("class","date")
+
+//   eventPone = document.createElement("p")
+
+//   eventPone.innerText = element.date
+
+//   eachDate.appendChild(eventPone)
+
+//   eachEvent.appendChild(eachDate)
+
+//   //create DIV for each-bar with name of the event
+
+//   eachBar = document.createElement("div")
+
+//   eachBar.setAttribute("class","my-bar")
+
+//   eventPtwo = document.createElement("p")
+
+//   eventPtwo.innerText = element.nom.toLocaleUpperCase()
+
+//   eachBar.appendChild(eventPtwo)
+
+//   eachEvent.appendChild(eachBar)
+
+//   INSTANCE.myEventContainer.appendChild(eachEvent)
+
+//   if(element.date == "19/02"){
+//     eachBar.style.width = "300px"
+//   } else if(element.date == "22/02"){
+//     eachBar.style.width = "400px"
+//   } else if(element.date == "26/02"){
+//     eachBar.style.width = "500px"
+//   } else if(element.date == "29/02"){
+//     eachBar.style.width = "600px"
+//   } else if(element.date == "04/03"){
+//     eachBar.style.width = "700px"
+//   } else if(element.date == "07/03"){
+//     eachBar.style.width = "800px"
+//   }
+// });
+

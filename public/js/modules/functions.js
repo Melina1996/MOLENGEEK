@@ -8,3 +8,4 @@ export function scrollFunction() {
       INSTANCE.myScrollbutton.style.display = "none";
     }
   }
+

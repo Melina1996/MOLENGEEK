@@ -1,0 +1,31 @@
+.my-banner
+    width: 100%
+    height: 600px
+    position: relative
+
+    display: flex
+    flex-direction: column
+    .my-slogan
+        width: 100%
+        height: 620px
+
+        display: flex
+        justify-content: center
+        align-items: center
+        h1
+            color: white
+
+
+.my-banner::before //apply filter-property to my background-image only, not to the text as well//
+    background-image: url(../../public/assets/img/pexels-karolina-grabowska-8092507.jpg)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    position: absolute
+    content: ""
+    z-index: -1 //filter behind Text//
+    width: 100%
+    height: 100%
+    filter: brightness(40%) contrast(110%)
+    background-attachment: fixed //damit bleibt bild beim scrollen//
+

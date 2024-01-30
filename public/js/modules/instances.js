@@ -18,3 +18,14 @@ export let myMediaIcons = ["./public/assets/img/facebook.png","./public/assets/i
 //SCROLL-BTN
 
 export let myScrollbutton = document.getElementById("footerBtn");
+
+//NAVBAR DROPDOWN-MENU
+
+export let myDropDown = document.querySelector(".dropdown-content")
+
+export let btnDropDown = document.querySelector(".dropbtn")
+
+//EVENTS FOR EVENTS SECTION
+
+export let myEventContainer = document.querySelector(".event-container")
+

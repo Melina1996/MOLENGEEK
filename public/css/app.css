@@ -11896,22 +11896,15 @@ body {
   align-items: center;
 }
 
-.my-banner-and-nav {
-  width: 100%;
-  height: 600px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.my-banner-and-nav header {
+header {
   width: 100%;
   height: 80px;
-  background: white;
+  background: #e6e1e3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.my-banner-and-nav header .navbar {
+header .navbar {
   height: 100%;
   width: 95%;
   margin-left: 10px;
@@ -11921,13 +11914,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.my-banner-and-nav header .navbar a {
+header .navbar a {
   text-decoration: none;
   color: black;
   margin: 0;
   padding: 0;
 }
-.my-banner-and-nav header .navbar .my-btn-nav {
+header .navbar .my-btn-nav {
   height: 48px;
   width: 100px;
   font-family: Inter;
@@ -11940,69 +11933,102 @@ body {
   justify-content: center;
   align-items: center;
 }
-.my-banner-and-nav header .navbar .my-btn-nav p {
+header .navbar .my-btn-nav p {
   color: black;
   margin: 0;
   padding: 0;
 }
-.my-banner-and-nav header .navbar .my-btn-nav p:hover {
+header .navbar .my-btn-nav p:hover {
   color: white;
 }
-.my-banner-and-nav header .navbar .my-btn-nav:hover {
+header .navbar .my-btn-nav:hover {
   background-color: #c8b747;
 }
-.my-banner-and-nav header .navbar .my-logo {
+header .navbar .my-logo {
   height: 100%;
   width: 20%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.my-banner-and-nav header .navbar .my-burger-menu {
-  height: 100%;
-  cursor: pointer;
-  display: block;
-}
-.my-banner-and-nav header .navbar .my-burger-menu .line {
-  display: block;
+header .navbar .my-burger-menu {
   width: 30px;
+  cursor: pointer;
+}
+header .navbar .my-burger-menu .line {
+  width: 100%;
   height: 2px;
   margin-bottom: 10px;
   background-color: black;
   cursor: pointer;
 }
-.my-banner-and-nav header .navbar .hide {
+header .navbar .hide {
   display: none;
 }
-.my-banner-and-nav header .navbar .my-links-center {
+header .navbar .my-links-center {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.my-banner-and-nav header .navbar .my-links-right {
+header .navbar .my-links-right {
   width: 20%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
 }
-.my-banner-and-nav header .navbar .all-my-links {
+header .navbar .my-links-right .dropdown-language {
+  position: relative;
+  display: inline-block;
+}
+header .navbar .my-links-right .dropdown-language .dropbtn {
+  background-color: none;
+  border-style: none;
+  cursor: pointer;
+  width: 50px;
+}
+header .navbar .my-links-right .dropdown-language .dropdown-content {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 50px;
+  height: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header .navbar .my-links-right .dropdown-language .show {
+  display: block;
+}
+header .navbar .my-links-right .dropdown-language .show a {
+  text-decoration: none;
+  font-family: Inter;
+}
+header .navbar .all-my-links {
   display: none;
 }
-.my-banner-and-nav .my-slogan {
+
+.my-banner {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.my-banner .my-slogan {
   width: 100%;
   height: 620px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.my-banner-and-nav .my-slogan h1, .my-banner-and-nav .my-slogan .h1 {
+.my-banner .my-slogan h1, .my-banner .my-slogan .h1 {
   color: white;
 }
 
-.my-banner-and-nav::before {
+.my-banner::before {
   background-image: url(../../public/assets/img/pexels-karolina-grabowska-8092507.jpg);
   background-size: cover;
   background-position: center;
@@ -12120,6 +12146,101 @@ main {
   font-weight: 900;
   padding: 0;
   margin: 0;
+}
+
+.our-events {
+  width: 100%;
+  height: 500px;
+  background: #c8b747;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+.our-events .event-container {
+  margin-top: 30px;
+  width: 100%;
+  heigth: 100%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+}
+.our-events .event-container .header-events {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: 75px;
+}
+.our-events .event-container .header-events h1, .our-events .event-container .header-events .h1 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 70px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.our-events .event-container .each-event {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.our-events .event-container .each-event .date p {
+  margin: 0;
+  padding: 0;
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 3px;
+}
+.our-events .event-container .each-event .my-bar {
+  width: 300px;
+  height: 50px;
+  background: white;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+.our-events .event-container .each-event .my-bar p {
+  margin: 0 0 0 20px;
+  padding: 0;
+  font-family: Inter;
+  letter-spacing: 5px;
+}
+.our-events button {
+  position: absolute;
+  bottom: 50px;
+  height: 80px;
+  width: 300px;
+  font-family: Inter;
+  font-size: 18px;
+  background: white;
+  letter-spacing: 1px;
+  border: 3px solid black;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-events button p {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.our-events button:hover {
+  background: black;
+  color: white;
+}
+.our-events button:hover p {
+  color: white;
 }
 
 .our-partners {
@@ -12273,65 +12394,27 @@ footer {
 }
 footer .upper-footer {
   width: 100%;
-  height: 200px;
-  border-bottom: 1px grey solid;
+  height: 80px;
+  border-bottom: 1px #c8b747 solid;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-footer .upper-footer .footer-part-one {
-  width: 33%;
-  height: 100%;
-}
-footer .upper-footer .footer-part-two {
-  width: 33%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-footer .upper-footer .footer-part-two .my-address {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .upper-footer .footer-part-two .my-address p {
-  margin: 0;
-  padding: 0;
-}
-footer .upper-footer .footer-part-two .e-mail-phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-}
-footer .upper-footer .footer-part-two .e-mail-phone p {
-  margin: 0;
-  padding: 0;
-}
-footer .upper-footer .footer-part-three {
-  width: 33%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 footer .lower-footer {
   width: 100%;
-  height: 50px;
+  height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 30px;
 }
 footer .lower-footer p {
   margin: 0;
   padding: 0;
   font-family: Inter;
-  font-size: 15px;
+  font-size: 12px;
 }
 footer #footerBtn {
   display: none;
@@ -12365,73 +12448,87 @@ footer #footerBtn:hover p {
 }
 
 /*Laptop*/
-.my-banner-and-nav header .navbar .my-logo {
-  width: 20%;
-}
-.my-banner-and-nav header .navbar .my-logo .logo-img {
-  width: 150px;
-  height: 40px;
-}
-.my-banner-and-nav header .navbar .my-burger-menu {
-  display: none;
-}
-
-/*Tablet*/
-@media (min-width: 425px) and (max-width: 768px) {
-  .my-banner-and-nav header .navbar .my-logo {
-    width: 30%;
+@media (min-width: 768px) and (max-width: 1450px) {
+  header .navbar .my-logo {
+    width: 20%;
   }
-  .my-banner-and-nav header .navbar .my-logo .logo-img {
+  header .navbar .my-logo .logo-img {
     width: 150px;
     height: 40px;
   }
-  .my-banner-and-nav header .navbar .my-burger-menu {
+  header .navbar .my-burger-menu {
     display: none;
   }
-  .my-banner-and-nav header .navbar .my-links-center {
-    width: 40%;
-    gap: 10px;
-  }
-  .my-banner-and-nav header .navbar .my-links-right {
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  header .navbar .my-logo {
     width: 30%;
+  }
+  header .navbar .my-logo .logo-img {
+    width: 150px;
+    height: 40px;
+  }
+  header .navbar .my-burger-menu {
+    display: block;
+  }
+  header .navbar .my-links-center {
+    display: none;
+  }
+  header .navbar .my-links-right {
+    display: none;
+  }
+  header .navbar .all-my-links {
+    position: absolute;
+    height: 200px;
+    width: 100vw;
+    top: 180px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .navbar .hide {
+    display: none;
   }
 }
 /*Mobile M&L*/
 @media (min-width: 321px) and (max-width: 425px) {
-  .my-banner-and-nav {
-    width: 100%;
-    height: 400px;
-  }
-  .my-banner-and-nav header {
+  header {
     width: 100%;
     height: 50px;
   }
-  .my-banner-and-nav header .navbar {
+  header .navbar {
     height: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .my-banner-and-nav header .navbar .my-logo {
+  header .navbar .my-logo {
     width: 20%;
   }
-  .my-banner-and-nav header .navbar .my-logo .logo-img {
+  header .navbar .my-logo .logo-img {
     width: 150px;
     height: 40px;
   }
-  .my-banner-and-nav header .navbar .my-burger-menu {
+  header .navbar .my-burger-menu {
     display: block;
   }
-  .my-banner-and-nav header .navbar .my-links-center {
+  header .navbar .my-links-center {
     display: none;
   }
-  .my-banner-and-nav header .navbar .my-links-right {
+  header .navbar .my-links-right {
     display: none;
   }
-  .my-banner-and-nav header .navbar .all-my-links {
+  header .navbar .all-my-links {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     top: 150px;
     right: 50%;
     left: 50%;
@@ -12442,7 +12539,7 @@ footer #footerBtn:hover p {
     align-items: center;
     justify-content: center;
   }
-  .my-banner-and-nav header .navbar .hide {
+  header .navbar .hide {
     display: none;
   }
 }
@@ -12730,6 +12827,495 @@ footer #footerBtn:hover p {
   .our-services .our-services-boxes .my-div-service h2, .our-services .our-services-boxes .my-div-service .h2 {
     font-family: Fira Sans Extra Condensed;
     font-weight: 900;
+  }
+}
+/*Laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .newsletter .newsletter-container .sign-up h1, .newsletter .newsletter-container .sign-up .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  .newsletter .newsletter-container .my-input {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .newsletter .newsletter-container .my-input input {
+    border: none;
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+  }
+  .newsletter .newsletter-container .my-input button {
+    height: 45px;
+    width: 80px;
+    font-family: Inter;
+    font-size: 12px;
+    background: white;
+    letter-spacing: 1px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsletter .newsletter-container .my-input button p {
+    padding: 0;
+    margin: 0;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .newsletter .newsletter-container .sign-up h1, .newsletter .newsletter-container .sign-up .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  .newsletter .newsletter-container .my-input {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .newsletter .newsletter-container .my-input input {
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  .newsletter .newsletter-container .my-input button {
+    height: 35px;
+    width: 80px;
+    font-family: Inter;
+    font-size: 12px;
+    background: white;
+    letter-spacing: 1px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsletter .newsletter-container .my-input button p {
+    padding: 0;
+    margin: 0;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .newsletter .newsletter-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .newsletter .newsletter-container .sign-up {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .newsletter .newsletter-container .sign-up h1, .newsletter .newsletter-container .sign-up .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+  }
+  .newsletter .newsletter-container .my-input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .newsletter .newsletter-container .my-input input {
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  .newsletter .newsletter-container .my-input button {
+    height: 35px;
+    width: 80px;
+    font-family: Inter;
+    font-size: 12px;
+    background: white;
+    letter-spacing: 1px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsletter .newsletter-container .my-input button p {
+    padding: 0;
+    margin: 0;
+  }
+}
+/*Laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .our-events .event-container {
+    margin-top: 30px;
+    width: 100%;
+    heigth: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .our-events .event-container .header-events h1, .our-events .event-container .header-events .h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .our-events .event-container .each-event .date p {
+    margin: 0;
+    padding: 0;
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 3px;
+  }
+  .our-events .event-container .each-event .my-bar p {
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-family: Inter;
+    letter-spacing: 5px;
+    font-size: 14px;
+  }
+  .our-events button {
+    position: absolute;
+    bottom: 50px;
+    height: 70px;
+    width: 260px;
+    font-family: Inter;
+    font-size: 16px;
+  }
+  .our-events button p {
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .our-events {
+    width: 100%;
+    height: 550px;
+    background: #c8b747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .our-events .event-container {
+    margin-top: 30px;
+    width: 100%;
+    heigth: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .our-events .event-container .header-events {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 50px;
+    top: -140px;
+  }
+  .our-events .event-container .header-events h1, .our-events .event-container .header-events .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  .our-events .event-container .each-event {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .our-events .event-container .each-event .date p {
+    margin: 0;
+    padding: 0;
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 70px;
+    letter-spacing: 3px;
+  }
+  .our-events .event-container .each-event .my-bar {
+    width: 300px;
+    height: 50px;
+    background: white;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+  }
+  .our-events .event-container .each-event .my-bar p {
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-family: Inter;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .our-events button {
+    position: absolute;
+    bottom: 30px;
+    height: 70px;
+    width: 200px;
+    font-family: Inter;
+    font-size: 15px;
+    background: white;
+    letter-spacing: 1px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-events button p {
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  .our-events button:hover {
+    background: black;
+    color: white;
+  }
+  .our-events button:hover p {
+    color: white;
+  }
+}
+/*Mobile L*/
+@media (min-width: 375px) and (max-width: 425px) {
+  .our-events {
+    width: 100%;
+    height: 550px;
+    background: #c8b747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .our-events .event-container {
+    margin-top: 30px;
+    width: 100%;
+    heigth: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .our-events .event-container .header-events {
+    width: 30%;
+    height: 100%;
+    left: 90px;
+    top: -140px;
+  }
+  .our-events .event-container .header-events h1, .our-events .event-container .header-events .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  .our-events .event-container .each-event {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .our-events .event-container .each-event .date {
+    margin-left: 15px;
+  }
+  .our-events .event-container .each-event .date p {
+    margin: 0;
+    padding: 0;
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 70px;
+    letter-spacing: 3px;
+  }
+  .our-events .event-container .each-event .my-bar {
+    width: 200px;
+    height: 60px;
+    background: white;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+  }
+  .our-events .event-container .each-event .my-bar p {
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-family: Inter;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .our-events button {
+    position: absolute;
+    bottom: 30px;
+    height: 70px;
+    width: 200px;
+    font-family: Inter;
+    font-size: 15px;
+    background: white;
+    letter-spacing: 1px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-events button p {
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  .our-events button:hover {
+    background: black;
+    color: white;
+  }
+  .our-events button:hover p {
+    color: white;
+  }
+}
+/*Mobile M*/
+@media (min-width: 321px) and (max-width: 375px) {
+  .our-events {
+    width: 100%;
+    height: 550px;
+    background: #c8b747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .our-events .event-container {
+    margin-top: 30px;
+    width: 100%;
+    heigth: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .our-events .event-container .header-events {
+    width: 30%;
+    height: 100%;
+    left: 60px;
+    top: -140px;
+  }
+  .our-events .event-container .header-events h1, .our-events .event-container .header-events .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  .our-events .event-container .each-event {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .our-events .event-container .each-event .date {
+    margin-left: 15px;
+  }
+  .our-events .event-container .each-event .date p {
+    margin: 0;
+    padding: 0;
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 70px;
+    letter-spacing: 3px;
+  }
+  .our-events .event-container .each-event .my-bar {
+    width: 200px;
+    height: 60px;
+    background: white;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+  }
+  .our-events .event-container .each-event .my-bar p {
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-family: Inter;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .our-events button {
+    position: absolute;
+    bottom: 30px;
+    height: 70px;
+    width: 200px;
+    font-family: Inter;
+    font-size: 15px;
+    background: white;
+    letter-spacing: 1px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-events button p {
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  .our-events button:hover {
+    background: black;
+    color: white;
+  }
+  .our-events button:hover p {
+    color: white;
   }
 }
 
