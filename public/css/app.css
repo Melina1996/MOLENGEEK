@@ -12333,6 +12333,36 @@ footer .lower-footer p {
   font-family: Inter;
   font-size: 15px;
 }
+footer #footerBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  cursor: pointer;
+  height: 48px;
+  width: 60px;
+  font-family: Inter;
+  font-size: 16px;
+  background: white;
+  letter-spacing: 1px;
+  border: 3px solid black;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #footerBtn p {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+footer #footerBtn:hover {
+  background: #c8b747;
+}
+footer #footerBtn:hover p {
+  color: white;
+}
 
 /*Laptop*/
 .my-banner-and-nav header .navbar .my-logo {

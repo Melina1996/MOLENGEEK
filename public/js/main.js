@@ -97,26 +97,6 @@ document.querySelector(".e-mail-phone").appendChild(pPhone)
 
 let newLink
 
-// for (let i = 0; i < Object.values(data.reseauxSociaux).length; i++) {
-
-//   newLink.href = Object.values(data.reseauxSociaux)[i]
-
-//   newLink = document.createElement("a")
-
-//   newImg = document.createElement("img")
-
-//   for (let y = 0; y < INSTANCE.myMediaIcons.length; y++) {
-  
-//   newImg.src = INSTANCE.myMediaIcons[y]
-
-//   newLink.appendChild(newImg)
-
-//   document.querySelector(".footer-part-three").appendChild(newLink)
-
-//   }
-  
-// }
-
 Object.values(data.reseauxSociaux).forEach(element => {
 
   newLink = document.createElement("a")
@@ -143,4 +123,19 @@ document.querySelectorAll(".my-icon")[2].src = "./public/assets/img/instagram.pn
 
 document.querySelectorAll(".my-icon")[3].src = "./public/assets/img/linkedIn.png"
 
+//SCROLL-BTN
 
+//Button on scroll//
+
+//creation of variable for my button (called with its id)//
+
+
+window.onscroll = function() {FUNCTION.scrollFunction()};
+
+
+//when the user clicks on it, the scroll goes back to top of the page//
+
+INSTANCE.myScrollbutton.addEventListener("click",()=>{
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})

@@ -14,3 +14,7 @@ export let myCarousel = document.querySelector(".my-carousel")
 //FOOTER SOCIAL MEDIA
 
 export let myMediaIcons = ["./public/assets/img/facebook.png","./public/assets/img/twitter.png","./public/assets/img/instagram.png","./public/assets/img/linkedIn.png"]
+
+//SCROLL-BTN
+
+export let myScrollbutton = document.getElementById("footerBtn");

@@ -60,6 +60,34 @@ footer
             font-family: Inter
             font-size: 15px
 
+    #footerBtn
+        display: none //is only appearing on event JS//
+        position: fixed //always on the same position of the site//
+        bottom: 25px
+        right: 25px
+        z-index: 99 //whatever new element is going to be put, the button will stay on top (99 is quite high)//
+        cursor: pointer
+        height: 48px
+        width: 60px
+        font-family: Inter
+        font-size: 16px
+        background: white
+        letter-spacing: 1px
+        border: 3px solid black
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px
+
+        display: flex
+        justify-content: center
+        align-items: center
+        p
+            color: black
+            margin: 0
+            padding: 0
+    #footerBtn:hover 
+        background: #c8b747
+        p
+            color: white
+
 
             
                 
