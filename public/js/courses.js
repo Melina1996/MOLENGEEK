@@ -70,7 +70,7 @@ for (let i = 0; i < Object.values(data.formations.formationsLongues).length; i++
 
   newH2 = document.createElement("h2")
 
-  newH2.innerText = Object.values(data.formations.formationsLongues)[i].nom
+  newH2.innerText = Object.values(data.formations.formationsLongues)[i].nom.toUpperCase()
 
   newDivCourse.appendChild(newH2)
 
@@ -112,7 +112,7 @@ allDivsCourses.forEach(element => {
       sectionMoreDetails.classList.add("show")
 
 
-      if(element.querySelector("h2").innerText == "Coding School"){
+      if(element.querySelector("h2").innerText == "CODING SCHOOL"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[0].nom
         description.innerText = Object.values(data.formations.formationsLongues)[0].descriptif
         duration.innerText = Object.values(data.formations.formationsLongues)[0].duree
@@ -126,7 +126,7 @@ allDivsCourses.forEach(element => {
         liFour.innerText = Object.values(data.formations.formationsLongues)[0].condition.situation
 
 
-      } else if(element.querySelector("h2").innerText == "Marketing Digital"){
+      } else if(element.querySelector("h2").innerText == "MARKETING DIGITAL"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[1].nom
         description.innerText = Object.values(data.formations.formationsLongues)[1].descriptif
         duration.innerText = Object.values(data.formations.formationsLongues)[1].duree
@@ -139,7 +139,7 @@ allDivsCourses.forEach(element => {
 
         liFour.innerText = Object.values(data.formations.formationsLongues)[1].condition.situation
 
-      } else if(element.querySelector("h2").innerText == "Webmaster 360"){
+      } else if(element.querySelector("h2").innerText == "WEBMASTER 360"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[2].nom
         description.innerText = Object.values(data.formations.formationsLongues)[2].descriptif
         duration.innerText = Object.values(data.formations.formationsLongues)[2].duree
@@ -152,7 +152,7 @@ allDivsCourses.forEach(element => {
 
         liFour.innerText = Object.values(data.formations.formationsLongues)[2].condition.situation
 
-      } else if(element.querySelector("h2").innerText == "AWS re/Start"){
+      } else if(element.querySelector("h2").innerText == "AWS RE/START"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[3].nom
         description.innerText = Object.values(data.formations.formationsLongues)[3].descriptif
         duration.innerText = Object.values(data.formations.formationsLongues)[3].duree
@@ -165,7 +165,7 @@ allDivsCourses.forEach(element => {
 
         liFour.innerText = Object.values(data.formations.formationsLongues)[3].condition.situation
 
-      } else if(element.querySelector("h2").innerText == "Salesforce Administrateur"){
+      } else if(element.querySelector("h2").innerText == "SALESFORCE ADMINISTRATEUR"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[4].nom
         description.innerText = Object.values(data.formations.formationsLongues)[4].descriptif
         duration.innerText = Object.values(data.formations.formationsLongues)[4].duree

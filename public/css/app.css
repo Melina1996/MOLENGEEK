@@ -12638,10 +12638,12 @@ footer #footerBtn:hover p {
   align-items: center;
 }
 #long .details-courses-container .our-courses-boxes .my-div-course h2, #long .details-courses-container .our-courses-boxes .my-div-course .h2, #long .details-courses-container .our-courses-boxes col h2, #long .details-courses-container .our-courses-boxes col .h2, #long .details-courses-container row .my-div-course h2, #long .details-courses-container row .my-div-course .h2, #long .details-courses-container row col h2, #long .details-courses-container row col .h2 {
-  font-family: Fira Sans Extra Condensed;
-  font-weight: 900;
+  font-family: Inter;
+  font-weight: bolder;
+  font-size: 18px;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 #long .hide {
   display: none;
