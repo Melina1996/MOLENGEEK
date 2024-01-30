@@ -99,10 +99,11 @@ export function myAccordionAssign(){
       newButton.setAttribute("class","accordion")
   
       newButton.appendChild(newPButton)
-  
+        
+      newPButton.innerText = Object.values(data.FAQ)[i]
+
       document.querySelector(".my-accordion-container").appendChild(newButton)
-      
-      newButton.innerText = Object.values(data.FAQ)[i]
+
         
   } else {
   

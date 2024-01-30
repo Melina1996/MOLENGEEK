@@ -12600,6 +12600,178 @@ footer #footerBtn:hover p {
   color: white;
 }
 
+#long {
+  width: 100%;
+  height: 500px;
+  background: #984d89;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#long .details-courses-container {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 130px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#long .details-courses-container .our-courses-boxes, #long .details-courses-container row {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#long .details-courses-container .our-courses-boxes .my-div-course, #long .details-courses-container .our-courses-boxes col, #long .details-courses-container row .my-div-course, #long .details-courses-container row col {
+  display: none;
+  height: 190px;
+  border-radius: 20px;
+  border: 2px white solid;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#long .details-courses-container .our-courses-boxes .my-div-course h2, #long .details-courses-container .our-courses-boxes .my-div-course .h2, #long .details-courses-container .our-courses-boxes col h2, #long .details-courses-container .our-courses-boxes col .h2, #long .details-courses-container row .my-div-course h2, #long .details-courses-container row .my-div-course .h2, #long .details-courses-container row col h2, #long .details-courses-container row col .h2 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+#long .hide {
+  display: none;
+}
+#long .container-more-details {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 55px;
+  left: 450px;
+  display: none;
+}
+#long .container-more-details .more-details-on-course {
+  width: 45%;
+  height: 80%;
+  background: white;
+  position: relative;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 3px solid white;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#long .container-more-details .more-details-on-course .name-course {
+  width: 80%;
+  height: 90px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#long .container-more-details .more-details-on-course .name-course h1, #long .container-more-details .more-details-on-course .name-course .h1 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 70px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+  color: #c8b747;
+}
+#long .container-more-details .more-details-on-course .all-my-details {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+#long .container-more-details .more-details-on-course .all-my-details .description {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+#long .container-more-details .more-details-on-course .all-my-details .description p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 16px;
+  color: black;
+}
+#long .container-more-details .more-details-on-course .all-my-details .duration {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#long .container-more-details .more-details-on-course .all-my-details .duration p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 14px;
+  color: black;
+}
+#long .container-more-details .more-details-on-course .all-my-details .requirements {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#long .container-more-details .more-details-on-course .all-my-details .requirements p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 14px;
+  color: black;
+}
+#long .container-more-details .more-details-on-course .btn-close-details {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 40px;
+  width: 60px;
+  font-family: Inter;
+  font-size: 13px;
+  background: white;
+  letter-spacing: 1px;
+  border: 3px solid black;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#long .container-more-details .more-details-on-course .btn-close-details p {
+  font-family: Inter;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+#long .container-more-details .more-details-on-course .btn-close-details:hover {
+  background: #c8b747;
+}
+#long .container-more-details .more-details-on-course .btn-close-details:hover p {
+  color: white;
+}
+#long .show {
+  display: block;
+}
+
 .why-molenGeek {
   width: 100%;
   height: 400px;
@@ -12706,13 +12878,14 @@ footer #footerBtn:hover p {
   border: 3px solid black;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .my-FAQ .container-FAQ .my-accordion-container .accordion p {
+  font-family: Inter;
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  font-family: Inter;
 }
 .my-FAQ .container-FAQ .my-accordion-container .accordion:hover {
   background: #984d89;
@@ -12721,10 +12894,18 @@ footer #footerBtn:hover p {
   color: white;
 }
 .my-FAQ .container-FAQ .my-accordion-container .panel {
+  width: 800px;
   padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
+}
+.my-FAQ .container-FAQ .my-accordion-container .panel p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 18px;
+  color: black;
 }
 
 /*Laptop*/
