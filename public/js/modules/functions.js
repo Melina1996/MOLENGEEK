@@ -74,11 +74,60 @@ export function myBurger(){
 
 //PAGE COURSES
 
+
+
+//assign data from JSON to my accordion
+
+let newButton
+
+let newPButton
+
+let newPanel
+
+let newPPanel
+
+export function myAccordionAssign(){
+
+  for (let i = 0; i <= Object.values(data.FAQ).length-1; i++) {
+  
+    if (i % 2 == 0) {
+      
+      newButton = document.createElement("button")
+  
+      newPButton = document.createElement("p")
+  
+      newButton.setAttribute("class","accordion")
+  
+      newButton.appendChild(newPButton)
+  
+      document.querySelector(".my-accordion-container").appendChild(newButton)
+      
+      newButton.innerText = Object.values(data.FAQ)[i]
+        
+  } else {
+  
+      newPanel = document.createElement("div")
+  
+      newPanel.setAttribute("class","panel")
+  
+      newPPanel = document.createElement("p")
+  
+      newPPanel.innerText = Object.values(data.FAQ)[i]
+  
+      newPanel.appendChild(newPPanel)
+  
+      document.querySelector(".my-accordion-container").appendChild(newPanel)
+  
+  }
+  }
+}
+
 //ACCORDION 
 
-let accordion = document.querySelectorAll(".accordion");
 
 export function myAccordion(){
+
+  let accordion = document.querySelectorAll(".accordion");
 
     for (let i = 0; i < accordion.length; i++) {
 
@@ -96,11 +145,5 @@ export function myAccordion(){
       }
 }
 
-//assign data from JSON to my accordion
 
-console.log(data.FAQ)
-
-for (let i = 0; i <= 4; i++) {
-    // console.log(Object.values(data.FAQ)[i])  
-}
 

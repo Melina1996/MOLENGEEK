@@ -12687,7 +12687,7 @@ footer #footerBtn:hover p {
   margin: 0;
   padding: 0;
 }
-.my-FAQ .container-FAQ .my-accordian-container {
+.my-FAQ .container-FAQ .my-accordion-container {
   width: 70%;
   height: 100%;
   display: flex;
@@ -12696,7 +12696,7 @@ footer #footerBtn:hover p {
   flex-direction: column;
   gap: 20px;
 }
-.my-FAQ .container-FAQ .my-accordian-container .accordion {
+.my-FAQ .container-FAQ .my-accordion-container .accordion {
   height: 48px;
   width: 800px;
   font-family: Inter;
@@ -12709,18 +12709,18 @@ footer #footerBtn:hover p {
   justify-content: center;
   align-items: center;
 }
-.my-FAQ .container-FAQ .my-accordian-container .accordion p {
+.my-FAQ .container-FAQ .my-accordion-container .accordion p {
   margin: 0;
   padding: 0;
   font-family: Inter;
 }
-.my-FAQ .container-FAQ .my-accordian-container .accordion:hover {
+.my-FAQ .container-FAQ .my-accordion-container .accordion:hover {
   background: #984d89;
 }
-.my-FAQ .container-FAQ .my-accordian-container .accordion:hover p {
+.my-FAQ .container-FAQ .my-accordion-container .accordion:hover p {
   color: white;
 }
-.my-FAQ .container-FAQ .my-accordian-container .panel {
+.my-FAQ .container-FAQ .my-accordion-container .panel {
   padding: 0 18px;
   background-color: white;
   display: none;

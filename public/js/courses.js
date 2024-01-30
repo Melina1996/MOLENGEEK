@@ -50,4 +50,7 @@ INSTANCE.myScrollbutton.addEventListener("click",()=>{
 
 //ACCORDION
 
+FUNCTION.myAccordionAssign()
+
 FUNCTION.myAccordion()
+
