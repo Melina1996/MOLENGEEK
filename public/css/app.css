@@ -11899,7 +11899,6 @@ body {
 header {
   width: 100%;
   height: 80px;
-  background: #e6e1e3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11916,7 +11915,8 @@ header .navbar {
 }
 header .navbar a {
   text-decoration: none;
-  color: black;
+  color: #c8b747;
+  letter-spacing: 2px;
   margin: 0;
   padding: 0;
 }
@@ -11938,11 +11938,11 @@ header .navbar .my-btn-nav p {
   margin: 0;
   padding: 0;
 }
-header .navbar .my-btn-nav p:hover {
-  color: white;
-}
 header .navbar .my-btn-nav:hover {
   background-color: #c8b747;
+}
+header .navbar .my-btn-nav:hover p {
+  color: white;
 }
 header .navbar .my-logo {
   height: 100%;
@@ -12025,7 +12025,17 @@ header .navbar .all-my-links {
   align-items: center;
 }
 .my-banner .my-slogan h1, .my-banner .my-slogan .h1 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 85px;
+  line-height: 70px;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0;
   color: white;
+}
+.my-banner .my-slogan h1:hover, .my-banner .my-slogan .h1:hover {
+  color: #c8b747;
 }
 
 .my-banner::before {
@@ -12313,15 +12323,48 @@ main {
 }
 
 .maps-section {
-  height: 300px;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .maps-section .my-map {
   position: relative;
+  width: 75%;
+  height: 350px;
 }
 .maps-section .my-map iframe {
+  height: 350px;
   width: 100%;
-  height: 300px;
   position: absolute;
+}
+.maps-section .my-contact-data {
+  width: 25%;
+  height: 350px;
+  background: #c8b747;
+  color: black;
+  font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maps-section .my-contact-data .all-contact-data {
+  width: 100%;
+  height: 50%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.maps-section .my-contact-data .all-contact-data p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 18px;
+  color: white;
 }
 
 .newsletter {
@@ -12420,7 +12463,7 @@ footer #footerBtn {
   display: none;
   position: fixed;
   bottom: 25px;
-  right: 25px;
+  right: 35px;
   z-index: 99;
   cursor: pointer;
   height: 48px;
@@ -12444,6 +12487,110 @@ footer #footerBtn:hover {
   background: #c8b747;
 }
 footer #footerBtn:hover p {
+  color: white;
+}
+
+.banner-slogan {
+  width: 100%;
+  height: 400px;
+  background: #c8b747;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-slogan h1, .banner-slogan .h1 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 85px;
+  line-height: 70px;
+  letter-spacing: 4px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.banner-slogan h1 span, .banner-slogan .h1 span {
+  color: black;
+}
+
+.courses-options {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.courses-options .container-courses {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.courses-options .container-courses .header-courses-options {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.courses-options .container-courses .header-courses-options h1, .courses-options .container-courses .header-courses-options .h1 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 70px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+}
+.courses-options .container-courses .description-courses {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.courses-options .container-courses .description-courses .general-description {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.courses-options .container-courses .description-courses .general-description p {
+  font-family: Inter;
+  font-size: 18px;
+}
+.courses-options .container-courses .description-courses .courses-btns {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.courses-options .container-courses .description-courses .courses-btns .my-course-btn {
+  height: 48px;
+  width: 200px;
+  font-family: Inter;
+  font-size: 16px;
+  background: white;
+  letter-spacing: 1px;
+  border: 3px solid black;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.courses-options .container-courses .description-courses .courses-btns .my-course-btn p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+.courses-options .container-courses .description-courses .courses-btns .my-course-btn:hover {
+  background: #c8b747;
+}
+.courses-options .container-courses .description-courses .courses-btns .my-course-btn:hover p {
   color: white;
 }
 
@@ -12543,6 +12690,68 @@ footer #footerBtn:hover p {
     display: none;
   }
 }
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .my-banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .my-banner .my-slogan {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-banner .my-slogan h1, .my-banner .my-slogan .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 85px;
+    line-height: 70px;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+  }
+  .my-banner .my-slogan h1:hover, .my-banner .my-slogan .h1:hover {
+    color: #c8b747;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .my-banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .my-banner .my-slogan {
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-banner .my-slogan h1, .my-banner .my-slogan .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 70px;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+  }
+  .my-banner .my-slogan h1:hover, .my-banner .my-slogan .h1:hover {
+    color: #c8b747;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .who-we-are {
     width: 100%;
@@ -12566,7 +12775,6 @@ footer #footerBtn:hover p {
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
   }
   .who-we-are .my-container-who-we-are .text-left h1, .who-we-are .my-container-who-we-are .text-left .h1 {
     font-family: Fira Sans Extra Condensed;
@@ -13316,6 +13524,162 @@ footer #footerBtn:hover p {
   }
   .our-events button:hover p {
     color: white;
+  }
+}
+/*Laptop*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .maps-section .my-map {
+    position: relative;
+    width: 65%;
+    height: 350px;
+  }
+  .maps-section .my-contact-data {
+    width: 35%;
+  }
+  .maps-section .my-contact-data .all-contact-data {
+    width: 100%;
+    height: 50%;
+    padding-left: 20px;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .maps-section .my-map {
+    position: relative;
+    width: 60%;
+    height: 350px;
+  }
+  .maps-section .my-contact-data {
+    width: 40%;
+  }
+  .maps-section .my-contact-data .all-contact-data {
+    width: 100%;
+    height: 50%;
+    padding-left: 20px;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .maps-section {
+    flex-direction: column;
+    height: 600px;
+  }
+  .maps-section .my-map {
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+  .maps-section .my-contact-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps-section .my-contact-data .all-contact-data {
+    width: 90%;
+    height: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps-section .my-contact-data .all-contact-data p {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .banner-slogan {
+    width: 100%;
+    height: 400px;
+    background: #c8b747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-slogan h1, .banner-slogan .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 70px;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .courses-options .container-courses .header-courses-options h1, .courses-options .container-courses .header-courses-options .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+  .courses-options .container-courses .description-courses .general-description p {
+    font-family: Inter;
+    font-size: 16px;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .courses-options .container-courses .header-courses-options h1, .courses-options .container-courses .header-courses-options .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+  .courses-options .container-courses .description-courses .general-description p {
+    font-family: Inter;
+    font-size: 15px;
+  }
+  .courses-options .container-courses .description-courses .courses-btns .my-course-btn {
+    height: 48px;
+    width: 150px;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .courses-options {
+    height: 450px;
+  }
+  .courses-options .container-courses {
+    flex-direction: column;
+  }
+  .courses-options .container-courses .header-courses-options {
+    width: 100%;
+    height: 190px;
+  }
+  .courses-options .container-courses .header-courses-options h1, .courses-options .container-courses .header-courses-options .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .courses-options .container-courses .description-courses {
+    width: 100%;
+  }
+  .courses-options .container-courses .description-courses .general-description p {
+    font-family: Inter;
+    font-size: 15px;
+  }
+  .courses-options .container-courses .description-courses .courses-btns {
+    justify-content: center;
+  }
+  .courses-options .container-courses .description-courses .courses-btns .my-course-btn {
+    height: 48px;
+    width: 150px;
   }
 }
 

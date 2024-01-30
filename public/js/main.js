@@ -3,17 +3,13 @@ import * as FUNCTION from "./modules/functions.js"
 import data from '../molengeek.json' assert { type: "json" }
 
 
-
 //BURGER-MENU: on click all my links appear
 
-INSTANCE.myBurger.addEventListener("click",()=>{
-  INSTANCE.allMyLinks.classList.toggle("hide")
-  console.log("hi")
-})
+FUNCTION.myBurger()
 
 //add MolenGeek logo to my Navbar
 
-document.querySelector(".logo-img").src = data.molengeekLogo
+FUNCTION.logoNav()
 
 //CAROUSEL: create an "li" for each of my slides, based on JSON
 
@@ -76,50 +72,34 @@ carouselBtns.forEach(element => {
 
 //FOOTER Logo Molengeek
 
-document.querySelector(".footer-logo").src = data.molengeekLogo
+FUNCTION.logoFooter()
 
-//Address
+//INCLUDE Address into contact section on HOME site
 
-// let pAddress = document.createElement("p")
+let pAddress = document.createElement("p")
 
-// pAddress.innerText = data.molengeekInfo.address
+pAddress.innerText = data.molengeekInfo.address
 
-// document.querySelector(".my-address").appendChild(pAddress)
+document.querySelector(".all-contact-data").appendChild(pAddress)
 
-// let pMail = document.createElement("p")
+let pMail = document.createElement("p")
 
-// pMail.innerText = data.molengeekInfo.email
+pMail.innerText = data.molengeekInfo.email
 
-// document.querySelector(".e-mail-phone").appendChild(pMail)
+document.querySelector(".all-contact-data").appendChild(pMail)
 
-// let pPhone = document.createElement("p")
+let pPhone = document.createElement("p")
 
-// pPhone.innerText = data.molengeekInfo.phone
+pPhone.innerText = data.molengeekInfo.phone
 
-// document.querySelector(".e-mail-phone").appendChild(pPhone)
+document.querySelector(".all-contact-data").appendChild(pPhone)
 
-//Social Media
+//FOOTER: assign social media logos
 
-let newLink
-
-Object.values(data.reseauxSociaux).forEach(element => {
-
-  newLink = document.createElement("a")
-
-  newLink.href = element
-
-  newImg = document.createElement("img")
-
-  newImg.setAttribute("class","my-icon")
-
-  newLink.appendChild(newImg)
-
-  document.querySelector(".upper-footer").appendChild(newLink)
-
-});
+FUNCTION.socialMedia()
 
 document.querySelectorAll(".my-icon")
-
+      
 document.querySelectorAll(".my-icon")[0].src = "./public/assets/img/facebook.png"
 
 document.querySelectorAll(".my-icon")[1].src = "./public/assets/img/twitter.png"
@@ -134,7 +114,6 @@ document.querySelectorAll(".my-icon")[3].src = "./public/assets/img/linkedIn.png
 
 //creation of variable for my button (called with its id)//
 
-
 window.onscroll = function() {FUNCTION.scrollFunction()};
 
 
@@ -147,10 +126,7 @@ INSTANCE.myScrollbutton.addEventListener("click",()=>{
 
 //NAVBAR WITH DROPDOWN
 
-INSTANCE.btnDropDown.addEventListener("click",()=>{
-  INSTANCE.myDropDown.classList.toggle("show");
-  console.log(INSTANCE.myDropDown)
-})
+FUNCTION.dropDown()
 
 //EVENTS FOR EVENTS SECTION
 
