@@ -72,4 +72,35 @@ export function myBurger(){
       })
 }
 
+//PAGE COURSES
+
+//ACCORDION 
+
+let accordion = document.querySelectorAll(".accordion");
+
+export function myAccordion(){
+
+    for (let i = 0; i < accordion.length; i++) {
+
+        accordion[i].addEventListener("click", function() {
+      
+          //Toggle between hiding and showing the panel
+          let  panel = this.nextElementSibling;
+      
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+}
+
+//assign data from JSON to my accordion
+
+console.log(data.FAQ)
+
+for (let i = 0; i <= 4; i++) {
+    // console.log(Object.values(data.FAQ)[i])  
+}
 

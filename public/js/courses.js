@@ -47,3 +47,7 @@ INSTANCE.myScrollbutton.addEventListener("click",()=>{
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 })
+
+//ACCORDION
+
+FUNCTION.myAccordion()
