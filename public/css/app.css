@@ -12587,11 +12587,61 @@ footer #footerBtn:hover p {
   padding: 0;
   font-family: Inter;
 }
-.courses-options .container-courses .description-courses .courses-btns .my-course-btn:hover {
+.courses-options .container-courses .description-courses .courses-btns .btn-course-one:hover {
   background: #c8b747;
 }
-.courses-options .container-courses .description-courses .courses-btns .my-course-btn:hover p {
+.courses-options .container-courses .description-courses .courses-btns .btn-course-one:hover p {
   color: white;
+}
+.courses-options .container-courses .description-courses .courses-btns .btn-course-two:hover {
+  background: #984d89;
+}
+.courses-options .container-courses .description-courses .courses-btns .btn-course-two:hover p {
+  color: white;
+}
+
+.why-molenGeek {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-molenGeek .container-why {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-molenGeek .container-why .header-why {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.why-molenGeek .container-why .header-why h1, .why-molenGeek .container-why .header-why .h1 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 70px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+}
+.why-molenGeek .container-why .video-why {
+  width: 60%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.why-molenGeek .container-why .video-why iframe {
+  width: 80%;
+  height: 100%;
+  position: absolute;
 }
 
 /*Laptop*/
@@ -13680,6 +13730,81 @@ footer #footerBtn:hover p {
   .courses-options .container-courses .description-courses .courses-btns .my-course-btn {
     height: 48px;
     width: 150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .why-molenGeek .container-why .header-why h1, .why-molenGeek .container-why .header-why .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .why-molenGeek {
+    height: 500px;
+  }
+  .why-molenGeek .container-why {
+    flex-direction: column;
+  }
+  .why-molenGeek .container-why .header-why {
+    width: 100%;
+    height: 100px;
+  }
+  .why-molenGeek .container-why .header-why h1, .why-molenGeek .container-why .header-why .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+  .why-molenGeek .container-why .video-why {
+    width: 100%;
+    height: 400px;
+  }
+  .why-molenGeek .container-why .video-why iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .why-molenGeek {
+    height: 400px;
+  }
+  .why-molenGeek .container-why {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-molenGeek .container-why .header-why {
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-molenGeek .container-why .header-why h1, .why-molenGeek .container-why .header-why .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+  .why-molenGeek .container-why .video-why {
+    width: 100%;
+    height: 400px;
+  }
+  .why-molenGeek .container-why .video-why iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 
