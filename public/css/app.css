@@ -12632,15 +12632,18 @@ footer #footerBtn:hover p {
   width: 90%;
   height: 90%;
   position: absolute;
-  top: 130px;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .details-courses .details-courses-container .our-courses-boxes, .details-courses .details-courses-container row {
-  width: 100%;
-  height: 200px;
+  width: 90%;
+  height: 100%;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12694,12 +12697,12 @@ footer #footerBtn:hover p {
 }
 .details-courses .container-more-details .more-details-on-course .name-course {
   width: 80%;
-  height: 90px;
+  height: 35%;
   margin-bottom: 10px;
   margin-top: 10px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 .details-courses .container-more-details .more-details-on-course .name-course h1, .details-courses .container-more-details .more-details-on-course .name-course .h1 {
   font-family: Fira Sans Extra Condensed;
@@ -12713,8 +12716,7 @@ footer #footerBtn:hover p {
 }
 .details-courses .container-more-details .more-details-on-course .all-my-details {
   width: 100%;
-  height: 100%;
-  padding-top: 30px;
+  height: 65%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -12731,37 +12733,44 @@ footer #footerBtn:hover p {
   margin: 0;
   padding: 0;
   font-family: Inter;
+  font-size: 18px;
+  color: black;
+}
+.details-courses .container-more-details .more-details-on-course .all-my-details .duration-and-requirements {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.details-courses .container-more-details .more-details-on-course .all-my-details .duration-and-requirements .duration {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.details-courses .container-more-details .more-details-on-course .all-my-details .duration-and-requirements .duration p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
   font-size: 16px;
   color: black;
 }
-.details-courses .container-more-details .more-details-on-course .all-my-details .duration {
+.details-courses .container-more-details .more-details-on-course .all-my-details .duration-and-requirements .requirements {
   width: 100%;
-  height: 30px;
+  height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 20px;
 }
-.details-courses .container-more-details .more-details-on-course .all-my-details .duration p {
+.details-courses .container-more-details .more-details-on-course .all-my-details .duration-and-requirements .requirements p {
   margin: 0;
   padding: 0;
   font-family: Inter;
-  font-size: 14px;
-  color: black;
-}
-.details-courses .container-more-details .more-details-on-course .all-my-details .requirements {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-}
-.details-courses .container-more-details .more-details-on-course .all-my-details .requirements p {
-  margin: 0;
-  padding: 0;
-  font-family: Inter;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
 }
 .details-courses .container-more-details .more-details-on-course .btn-close-details {
@@ -14126,6 +14135,63 @@ footer #footerBtn:hover p {
   .courses-options .container-courses .description-courses .courses-btns .my-course-btn {
     height: 48px;
     width: 150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .details-courses .container-more-details .more-details-on-course {
+    width: 65%;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .details-courses {
+    height: 500px;
+  }
+  .details-courses .details-courses-container .our-courses-boxes, .details-courses .details-courses-container row {
+    heigh: 100%;
+  }
+  .details-courses .container-more-details .more-details-on-course {
+    width: 80%;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .details-courses {
+    height: 700px;
+  }
+  .details-courses .details-courses-container {
+    width: 100%;
+  }
+  .details-courses .details-courses-container .our-courses-boxes, .details-courses .details-courses-container row {
+    padding-left: 20px;
+    height: 100%;
+    width: 90%;
+    flex-direction: column;
+  }
+  .details-courses .container-more-details .more-details-on-course {
+    width: 80%;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .details-courses .container-more-details .more-details-on-course .all-my-details .duration-and-requirements {
+    flex-direction: column;
+    width: 80%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
