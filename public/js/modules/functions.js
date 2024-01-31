@@ -262,6 +262,24 @@ export function displayCourses(){
 
 }
 
+//EVENTS: ASSIGN ALL THE DATES AND THE NAME OF EVENT TO RESPECTIVE BAR
+
+export function assignEventDates(){
+
+  let allEventNames = document.querySelectorAll(".bar")
+
+let allEventsDates = document.querySelectorAll(".date")
+
+
+for (let i = 0; i < data.formations.seancesInfos.length; i++) {
+
+  allEventNames[i].querySelector("p").innerText = data.formations.seancesInfos[i].nom
+
+  allEventsDates[i].querySelector("p").innerText = data.formations.seancesInfos[i].date
+  
+}
+
+}
 
 
 
