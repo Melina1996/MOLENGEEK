@@ -62,7 +62,7 @@ let myH1WhoWeAre = document.querySelector(".text-left").querySelector("h1")
 
 myH1WhoWeAre.style.color = "black"
 
-let jobOffersH1 = document.querySelector(".header-next-section").querySelector("h1")
+let jobOffersH1 = document.querySelector(".header-this-section").querySelector("h1")
 
 jobOffersH1.style.color = "#c8b747"
 
