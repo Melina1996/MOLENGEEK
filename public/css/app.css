@@ -14079,6 +14079,20 @@ footer #footerBtn:hover p {
     font-family: Inter;
     font-size: 16px;
   }
+  .courses-options .header-following-section {
+    position: absolute;
+    left: 60px;
+    bottom: -5px;
+  }
+  .courses-options .header-following-section h1, .courses-options .header-following-section .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
 }
 /*Tablet*/
 @media (min-width: 425px) and (max-width: 768px) {
@@ -14099,9 +14113,23 @@ footer #footerBtn:hover p {
     height: 48px;
     width: 150px;
   }
+  .courses-options .header-following-section {
+    position: absolute;
+    left: 45px;
+    bottom: -5px;
+  }
+  .courses-options .header-following-section h1, .courses-options .header-following-section .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
 }
-/*Mobile M&L*/
-@media (min-width: 321px) and (max-width: 425px) {
+/*Mobile L*/
+@media (min-width: 376px) and (max-width: 425px) {
   .courses-options {
     height: 450px;
   }
@@ -14135,6 +14163,71 @@ footer #footerBtn:hover p {
   .courses-options .container-courses .description-courses .courses-btns .my-course-btn {
     height: 48px;
     width: 150px;
+  }
+  .courses-options .header-following-section {
+    position: absolute;
+    left: 60px;
+    bottom: -5px;
+  }
+  .courses-options .header-following-section h1, .courses-options .header-following-section .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+}
+/*Mobile S*/
+@media (min-width: 320px) and (max-width: 375px) {
+  .courses-options {
+    height: 450px;
+  }
+  .courses-options .container-courses {
+    flex-direction: column;
+  }
+  .courses-options .container-courses .header-courses-options {
+    width: 100%;
+    height: 190px;
+  }
+  .courses-options .container-courses .header-courses-options h1, .courses-options .container-courses .header-courses-options .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .courses-options .container-courses .description-courses {
+    width: 100%;
+  }
+  .courses-options .container-courses .description-courses .general-description p {
+    font-family: Inter;
+    font-size: 15px;
+  }
+  .courses-options .container-courses .description-courses .courses-btns {
+    justify-content: center;
+  }
+  .courses-options .container-courses .description-courses .courses-btns .my-course-btn {
+    height: 48px;
+    width: 150px;
+  }
+  .courses-options .header-following-section {
+    position: absolute;
+    left: 40px;
+    bottom: -5px;
+  }
+  .courses-options .header-following-section h1, .courses-options .header-following-section .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -14192,6 +14285,103 @@ footer #footerBtn:hover p {
   .details-courses .container-more-details .more-details-on-course .all-my-details .duration-and-requirements {
     flex-direction: column;
     width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .courses-short .shorts-accordion-container .accordion-shorts {
+    margin-top: 20px;
+    height: 48px;
+    width: 700px;
+  }
+  .courses-short .shorts-accordion-container .accordion-shorts p {
+    font-size: 16px;
+  }
+  .courses-short .shorts-accordion-container .accordion-shorts:hover {
+    background: black;
+    border: 3px solid white;
+    box-shadow: 1px 1px 0px 0px white, 2px 2px 0px 0px white, 2px 2px 0px 0px white, 4px 4px 0px 0px white, 3px 3px 0px 0px white;
+  }
+  .courses-short .shorts-accordion-container .accordion-shorts:hover p {
+    color: white;
+  }
+  .courses-short .shorts-accordion-container .panel-shorts {
+    width: 700px;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .courses-short .shorts-accordion-container .panel-shorts li {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    font-size: 16px;
+    color: black;
+  }
+  .hide {
+    display: none;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .courses-short .shorts-accordion-container .accordion-shorts {
+    margin-top: 20px;
+    height: 48px;
+    width: 500px;
+  }
+  .courses-short .shorts-accordion-container .accordion-shorts:hover {
+    background: black;
+    border: 3px solid white;
+    box-shadow: 1px 1px 0px 0px white, 2px 2px 0px 0px white, 2px 2px 0px 0px white, 4px 4px 0px 0px white, 3px 3px 0px 0px white;
+  }
+  .courses-short .shorts-accordion-container .accordion-shorts:hover p {
+    color: white;
+  }
+  .courses-short .shorts-accordion-container .panel-shorts {
+    width: 500px;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .hide {
+    display: none;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .courses-short .shorts-accordion-container .accordion-shorts {
+    margin-top: 20px;
+    height: 48px;
+    width: 350px;
+  }
+  .courses-short .shorts-accordion-container .accordion-shorts p {
+    font-size: 14px;
+  }
+  .courses-short .shorts-accordion-container .accordion-shorts:hover {
+    background: black;
+    border: 3px solid white;
+    box-shadow: 1px 1px 0px 0px white, 2px 2px 0px 0px white, 2px 2px 0px 0px white, 4px 4px 0px 0px white, 3px 3px 0px 0px white;
+  }
+  .courses-short .shorts-accordion-container .accordion-shorts:hover p {
+    color: white;
+  }
+  .courses-short .shorts-accordion-container .panel-shorts {
+    width: 350px;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .courses-short .shorts-accordion-container .panel-shorts li {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    font-size: 14px;
+    color: black;
+  }
+  .hide {
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -14354,7 +14544,7 @@ footer #footerBtn:hover p {
     align-items: center;
   }
   .my-FAQ .container-FAQ .my-accordion-container .accordion {
-    width: 400px;
+    width: 350px;
   }
   .my-FAQ .container-FAQ .my-accordion-container .accordion p {
     font-family: Inter;
@@ -14369,7 +14559,7 @@ footer #footerBtn:hover p {
     color: white;
   }
   .my-FAQ .container-FAQ .my-accordion-container .panel {
-    width: 400px;
+    width: 350px;
   }
   .my-FAQ .container-FAQ .my-accordion-container .panel p {
     font-size: 14px;
