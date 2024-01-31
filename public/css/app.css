@@ -13250,6 +13250,195 @@ footer #footerBtn:hover p {
   color: black;
 }
 
+.introduction-coworking {
+  width: 100%;
+  height: 300px;
+  padding-top: 50px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduction-coworking .my-container-coworking {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduction-coworking .my-container-coworking .text-left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.introduction-coworking .my-container-coworking .text-left h1, .introduction-coworking .my-container-coworking .text-left .h1 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 70px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+.introduction-coworking .my-container-coworking .text-right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.introduction-coworking .my-container-coworking .text-right h1, .introduction-coworking .my-container-coworking .text-right .h1 {
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+}
+
+.slogan-and-photo {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.slogan-and-photo .my-img-coworking {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slogan-and-photo .my-img-coworking img {
+  width: 940px;
+  height: 600px;
+  border-radius: 4px 4px 0px 0px;
+}
+.slogan-and-photo .my-slogan-coworking {
+  width: 290px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slogan-and-photo .my-slogan-coworking h1, .slogan-and-photo .my-slogan-coworking .h1 {
+  font-family: Inter;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+.slogan-and-photo .my-slogan-coworking h1 span, .slogan-and-photo .my-slogan-coworking .h1 span {
+  color: #c8b747;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.description-coworking {
+  width: 100%;
+  height: 400px;
+  background: #c8b747;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description-coworking .row, .description-coworking .all-my-descriptions {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.description-coworking .row .col, .description-coworking .all-my-descriptions .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description-coworking .row .col p, .description-coworking .all-my-descriptions .col p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+}
+.description-coworking .row .list, .description-coworking .all-my-descriptions .list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.description-coworking .row .list p, .description-coworking .all-my-descriptions .list p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+}
+.description-coworking .row .list ul li, .description-coworking .all-my-descriptions .list ul li {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+}
+.description-coworking .row .opening-hours, .description-coworking .all-my-descriptions .opening-hours {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  height: 280px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+.description-coworking .row .opening-hours p, .description-coworking .all-my-descriptions .opening-hours p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+}
+.description-coworking .row .opening-hours p span, .description-coworking .all-my-descriptions .opening-hours p span {
+  color: white;
+  font-weight: bolder;
+}
+.description-coworking .row .opening-hours h1, .description-coworking .row .opening-hours .h1, .description-coworking .all-my-descriptions .opening-hours h1, .description-coworking .all-my-descriptions .opening-hours .h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bolder;
+  color: #c8b747;
+  letter-spacing: 3px;
+}
+
+.maps-section-coworking {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maps-section-coworking .my-map {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+.maps-section-coworking .my-map iframe {
+  height: 350px;
+  width: 100%;
+  position: absolute;
+}
+
 /*Laptop*/
 @media (min-width: 768px) and (max-width: 1450px) {
   header .navbar .my-logo {

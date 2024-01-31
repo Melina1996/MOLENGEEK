@@ -47,3 +47,13 @@ INSTANCE.myScrollbutton.addEventListener("click",()=>{
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 })
+
+//CHANGE COLOR BACKGROUND BANNER
+
+let myBanner = document.querySelector(".banner-slogan")
+
+myBanner.style.background = "#984d89"
+
+//HOVER TITLE CHANGE COLOR
+
+FUNCTION.changeColorHeader()
