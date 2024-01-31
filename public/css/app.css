@@ -12097,9 +12097,8 @@ header .navbar .all-my-links {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.who-we-are .my-container-who-we-are h1, .who-we-are .my-container-who-we-are .h1 {
-  font-family: Fira Sans Extra Condensed;
-  font-weight: 300;
+.who-we-are .my-container-who-we-are .text-right h1, .who-we-are .my-container-who-we-are .text-right .h1 {
+  font-family: Inter;
   font-size: 18px;
   line-height: 30px;
 }
@@ -12116,6 +12115,7 @@ header .navbar .all-my-links {
   letter-spacing: 3px;
   margin: 0;
   padding: 0;
+  color: black;
 }
 
 main {
@@ -13049,6 +13049,39 @@ footer #footerBtn:hover p {
   color: black;
 }
 
+.description-school {
+  width: 100%;
+  height: 300px;
+  background: #c8b747;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description-school .row {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.description-school .row .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description-school .row .col p {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 30px;
+}
+.description-school .row .col p span {
+  color: white;
+  font-weight: bolder;
+}
+
 /*Laptop*/
 @media (min-width: 768px) and (max-width: 1450px) {
   header .navbar .my-logo {
@@ -13248,9 +13281,8 @@ footer #footerBtn:hover p {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .who-we-are .my-container-who-we-are h1, .who-we-are .my-container-who-we-are .h1 {
-    font-family: Fira Sans Extra Condensed;
-    font-weight: 300;
+  .who-we-are .my-container-who-we-are .text-right h1, .who-we-are .my-container-who-we-are .text-right .h1 {
+    font-family: Inter;
     font-size: 18px;
     line-height: 30px;
   }
@@ -13312,10 +13344,9 @@ footer #footerBtn:hover p {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .who-we-are .my-container-who-we-are h1, .who-we-are .my-container-who-we-are .h1 {
-    font-family: Fira Sans Extra Condensed;
-    font-weight: 300;
-    font-size: 18px;
+  .who-we-are .my-container-who-we-are .text-right h1, .who-we-are .my-container-who-we-are .text-right .h1 {
+    font-family: Inter;
+    font-size: 16px;
     line-height: 30px;
   }
   .who-we-are .my-container-who-we-are .header-next-section {
@@ -13377,10 +13408,9 @@ footer #footerBtn:hover p {
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .who-we-are .my-container-who-we-are h1, .who-we-are .my-container-who-we-are .h1 {
-    font-family: Fira Sans Extra Condensed;
-    font-weight: 300;
-    font-size: 18px;
+  .who-we-are .my-container-who-we-are .text-right h1, .who-we-are .my-container-who-we-are .text-right .h1 {
+    font-family: Inter;
+    font-size: 16px;
     line-height: 30px;
   }
   .who-we-are .my-container-who-we-are .header-next-section {
@@ -14638,6 +14668,50 @@ footer #footerBtn:hover p {
   .why-molenGeek .container-why .video-why iframe {
     width: 100%;
     height: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .description-school {
+    height: 450px;
+  }
+  .description-school .row .col p {
+    font-size: 16px;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .description-school {
+    width: 100%;
+    height: 450px;
+  }
+  .description-school .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .description-school .row .col p {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .description-school {
+    width: 100%;
+    height: 650px;
+  }
+  .description-school .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .description-school .row .col p {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 30px;
   }
 }
 
