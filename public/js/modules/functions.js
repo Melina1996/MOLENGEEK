@@ -21,11 +21,12 @@ export function logoFooter(){
 
 //Social Media
 
-export let newLink
-
-export let newImg
-
 export function socialMedia(){
+
+  let newLink
+
+  let newImg
+
     Object.values(data.reseauxSociaux).forEach(element => {
 
         newLink = document.createElement("a")
@@ -74,19 +75,17 @@ export function myBurger(){
 
 //PAGE COURSES
 
-
-
 //assign data from JSON to my accordion
 
-let newButton
-
-let newPButton
-
-let newPanel
-
-let newPPanel
-
 export function myAccordionAssign(){
+
+  let newButton
+
+  let newPButton
+
+  let newPanel
+
+  let newPPanel
 
   for (let i = 0; i <= Object.values(data.FAQ).length-1; i++) {
   
@@ -125,7 +124,10 @@ export function myAccordionAssign(){
 
 //assign short course info to my panels of my accordion
 
-let newLiShorts
+
+export function myAccordionShorts(){
+
+  let newLiShorts
 
 let firstPanelShorts = document.querySelector("#firstPanel").querySelector("ul")
 
@@ -138,8 +140,6 @@ let fourthPanelShorts = document.querySelector("#fourthPanel").querySelector("ul
 let fifthPanelShorts = document.querySelector("#fifthPanel").querySelector("ul")
 
 let sixthPanelShorts = document.querySelector("#sixthPanel").querySelector("ul")
-
-export function myAccordionShorts(){
 
   for (let i = 0; i <= Object.values(data.formations)[1].length-1; i++) {
   
@@ -237,16 +237,16 @@ export function accordionShorts(){
 
 //SELECT COURSES DISPLAY
 
-let sectionLongCourses = document.querySelector(".details-courses")
-
-let sectionShortCourses = document.querySelector(".courses-short")
-
-let btnLongCourses = document.querySelector(".btn-course-one")
-
-let btnShortCourses = document.querySelector(".btn-course-two")
-
 
 export function displayCourses(){
+
+  let sectionLongCourses = document.querySelector(".details-courses")
+
+  let sectionShortCourses = document.querySelector(".courses-short")
+
+  let btnLongCourses = document.querySelector(".btn-course-one")
+
+  let btnShortCourses = document.querySelector(".btn-course-two")
 
   btnLongCourses.addEventListener("click",()=>{
     sectionShortCourses.classList.add("hide")

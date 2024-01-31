@@ -2,15 +2,53 @@
     width: 100%
     height: 400px
     background: #c8b747
+    position: relative
 
     display: flex
     justify-content: center
     align-items: center
     gap: 100px
-    .first-testimonial
-        button
-            .my-icon-play
-                filter: drop-shadow(5px 5px 5px #222)
+    .container-testimonials
+        width: 90%
+        height: 90%
+
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        flex-direction: column
+        .header-testimonials
+            width: 100%
+            height: 20%
+
+            display: flex
+            justify-content: flex-start
+            align-items: flex-start
+            h1
+                font-family: Fira Sans Extra Condensed
+                font-weight: 900 
+                font-size: 75px   
+                line-height: 70px
+                letter-spacing: 3px
+                margin: 0
+                padding: 0
+                color: white
+        .modals-testimonials
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+
+
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 120px
+            .first-testimonial
+                button
+                    .my-icon-play
+                        filter: drop-shadow(5px 5px 5px #222)
 
 
         

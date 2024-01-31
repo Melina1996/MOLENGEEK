@@ -12912,18 +12912,56 @@ footer #footerBtn:hover p {
   width: 100%;
   height: 400px;
   background: #c8b747;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 100px;
 }
-.testimonials .first-testimonial button .my-icon-play {
+.testimonials .container-testimonials {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonials .container-testimonials .header-testimonials {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.testimonials .container-testimonials .header-testimonials h1, .testimonials .container-testimonials .header-testimonials .h1 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 70px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.testimonials .container-testimonials .modals-testimonials {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+.testimonials .container-testimonials .modals-testimonials .first-testimonial button .my-icon-play {
   filter: drop-shadow(5px 5px 5px #222);
 }
 
 .my-FAQ {
   width: 100%;
-  height: 500px;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12931,9 +12969,11 @@ footer #footerBtn:hover p {
 .my-FAQ .container-FAQ {
   width: 90%;
   height: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .my-FAQ .container-FAQ .header-FAQ {
   width: 30%;
@@ -14086,6 +14126,133 @@ footer #footerBtn:hover p {
   .courses-options .container-courses .description-courses .courses-btns .my-course-btn {
     height: 48px;
     width: 150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .my-FAQ .container-FAQ .header-FAQ h1, .my-FAQ .container-FAQ .header-FAQ .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion {
+    width: 600px;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion p {
+    font-family: Inter;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion:hover {
+    background: #984d89;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion:hover p {
+    color: white;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .panel {
+    width: 600px;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .panel p {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    font-size: 16px;
+    color: black;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .my-FAQ .container-FAQ {
+    flex-direction: column;
+  }
+  .my-FAQ .container-FAQ .header-FAQ {
+    width: 100%;
+  }
+  .my-FAQ .container-FAQ .header-FAQ h1, .my-FAQ .container-FAQ .header-FAQ .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion {
+    width: 500px;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion p {
+    font-family: Inter;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion:hover {
+    background: #984d89;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion:hover p {
+    color: white;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .panel {
+    width: 500px;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .my-FAQ .container-FAQ {
+    flex-direction: column;
+  }
+  .my-FAQ .container-FAQ .header-FAQ {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-FAQ .container-FAQ .header-FAQ h1, .my-FAQ .container-FAQ .header-FAQ .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion {
+    width: 400px;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion p {
+    font-family: Inter;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion:hover {
+    background: #984d89;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .accordion:hover p {
+    color: white;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .panel {
+    width: 400px;
+  }
+  .my-FAQ .container-FAQ .my-accordion-container .panel p {
+    font-size: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
