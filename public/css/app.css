@@ -13317,17 +13317,21 @@ footer #footerBtn:hover p {
   border-radius: 4px 4px 0px 0px;
 }
 .slogan-and-photo .my-slogan-coworking {
-  width: 290px;
+  width: 400px;
   height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .slogan-and-photo .my-slogan-coworking h1, .slogan-and-photo .my-slogan-coworking .h1 {
-  font-family: Inter;
-  font-size: 50px;
-  padding: 0;
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 70px;
+  letter-spacing: 3px;
   margin: 0;
+  padding: 0;
+  color: black;
 }
 .slogan-and-photo .my-slogan-coworking h1 span, .slogan-and-photo .my-slogan-coworking .h1 span {
   color: #c8b747;
@@ -15155,6 +15159,291 @@ footer #footerBtn:hover p {
   .all-job-offers .header-this-section h1, .all-job-offers .header-this-section .h1 {
     font-size: 45px;
     line-height: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .introduction-coworking .my-container-coworking .text-left h1, .introduction-coworking .my-container-coworking .text-left .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  .introduction-coworking .my-container-coworking .text-right h1, .introduction-coworking .my-container-coworking .text-right .h1 {
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .introduction-coworking {
+    height: 400px;
+  }
+  .introduction-coworking .my-container-coworking .text-left h1, .introduction-coworking .my-container-coworking .text-left .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .introduction-coworking {
+    height: 550px;
+  }
+  .introduction-coworking .my-container-coworking {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduction-coworking .my-container-coworking .text-left {
+    width: 100%;
+  }
+  .introduction-coworking .my-container-coworking .text-left h1, .introduction-coworking .my-container-coworking .text-left .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  .introduction-coworking .my-container-coworking .text-right {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .description-coworking {
+    width: 100%;
+    height: 400px;
+  }
+  .description-coworking .row .col p, .description-coworking .all-my-descriptions .col p {
+    font-size: 16px;
+  }
+  .description-coworking .row .list p, .description-coworking .all-my-descriptions .list p {
+    font-size: 16px;
+  }
+  .description-coworking .row .list ul li, .description-coworking .all-my-descriptions .list ul li {
+    font-size: 16px;
+  }
+  .description-coworking .row .opening-hours p, .description-coworking .all-my-descriptions .opening-hours p {
+    font-size: 16px;
+  }
+  .description-coworking .row .opening-hours h1, .description-coworking .row .opening-hours .h1, .description-coworking .all-my-descriptions .opening-hours h1, .description-coworking .all-my-descriptions .opening-hours .h1 {
+    font-size: 18px;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .description-coworking {
+    width: 100%;
+    height: 600px;
+  }
+  .description-coworking .row, .description-coworking .all-my-descriptions {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .description-coworking .row .col, .description-coworking .all-my-descriptions .col {
+    width: 100%;
+  }
+  .description-coworking .row .col p, .description-coworking .all-my-descriptions .col p {
+    font-size: 16px;
+  }
+  .description-coworking .row .list, .description-coworking .all-my-descriptions .list {
+    width: 100%;
+  }
+  .description-coworking .row .list p, .description-coworking .all-my-descriptions .list p {
+    font-size: 16px;
+  }
+  .description-coworking .row .list ul li, .description-coworking .all-my-descriptions .list ul li {
+    font-size: 16px;
+  }
+  .description-coworking .row .opening-hours, .description-coworking .all-my-descriptions .opening-hours {
+    width: 100%;
+    height: 150px;
+  }
+  .description-coworking .row .opening-hours p, .description-coworking .all-my-descriptions .opening-hours p {
+    font-size: 16px;
+  }
+  .description-coworking .row .opening-hours h1, .description-coworking .row .opening-hours .h1, .description-coworking .all-my-descriptions .opening-hours h1, .description-coworking .all-my-descriptions .opening-hours .h1 {
+    font-size: 18px;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .description-coworking {
+    width: 100%;
+    height: 800px;
+  }
+  .description-coworking .row, .description-coworking .all-my-descriptions {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .description-coworking .row .col, .description-coworking .all-my-descriptions .col {
+    width: 100%;
+  }
+  .description-coworking .row .col p, .description-coworking .all-my-descriptions .col p {
+    font-size: 16px;
+  }
+  .description-coworking .row .list, .description-coworking .all-my-descriptions .list {
+    width: 100%;
+  }
+  .description-coworking .row .list p, .description-coworking .all-my-descriptions .list p {
+    font-size: 16px;
+  }
+  .description-coworking .row .list ul li, .description-coworking .all-my-descriptions .list ul li {
+    font-size: 16px;
+  }
+  .description-coworking .row .opening-hours, .description-coworking .all-my-descriptions .opening-hours {
+    width: 100%;
+    height: 150px;
+  }
+  .description-coworking .row .opening-hours p, .description-coworking .all-my-descriptions .opening-hours p {
+    font-size: 16px;
+  }
+  .description-coworking .row .opening-hours h1, .description-coworking .row .opening-hours .h1, .description-coworking .all-my-descriptions .opening-hours h1, .description-coworking .all-my-descriptions .opening-hours .h1 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .slogan-and-photo {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    align-items: center;
+  }
+  .slogan-and-photo .my-img-coworking {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .slogan-and-photo .my-img-coworking img {
+    width: 665px;
+    height: 440px;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .slogan-and-photo .my-slogan-coworking {
+    width: 290px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .slogan-and-photo .my-slogan-coworking h1, .slogan-and-photo .my-slogan-coworking .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  .slogan-and-photo .my-slogan-coworking h1 span, .slogan-and-photo .my-slogan-coworking .h1 span {
+    color: #c8b747;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+}
+/*Tablet*/
+@media (min-width: 425px) and (max-width: 768px) {
+  .slogan-and-photo {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .slogan-and-photo .my-img-coworking {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slogan-and-photo .my-img-coworking img {
+    width: 700px;
+    height: 480px;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .slogan-and-photo .my-slogan-coworking {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slogan-and-photo .my-slogan-coworking h1, .slogan-and-photo .my-slogan-coworking .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  .slogan-and-photo .my-slogan-coworking h1 span, .slogan-and-photo .my-slogan-coworking .h1 span {
+    color: #c8b747;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .slogan-and-photo {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .slogan-and-photo .my-img-coworking {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slogan-and-photo .my-img-coworking img {
+    width: 375px;
+    height: 280px;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .slogan-and-photo .my-slogan-coworking {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slogan-and-photo .my-slogan-coworking h1, .slogan-and-photo .my-slogan-coworking .h1 {
+    font-family: Fira Sans Extra Condensed;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+  }
+  .slogan-and-photo .my-slogan-coworking h1 span, .slogan-and-photo .my-slogan-coworking .h1 span {
+    color: #c8b747;
+    font-size: 40px;
+    letter-spacing: 3px;
   }
 }
 
