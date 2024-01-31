@@ -48,13 +48,24 @@ INSTANCE.myScrollbutton.addEventListener("click",()=>{
   document.documentElement.scrollTop = 0;
 })
 
-//ACCORDION
+//FAQ - ACCORDION
 
 FUNCTION.myAccordionAssign()
 
 FUNCTION.myAccordion()
 
-//DETAILS-COURSES
+//SHORT COURSES - ACCORDION
+
+FUNCTION.myAccordionShorts()
+
+//ACCORDION SHORT COURSE: click on my btns to show text below
+
+FUNCTION.accordionShorts()
+
+
+
+
+//DETAILS COURSES FOR LONG COURSES
 
 let newDivCourse 
 
@@ -188,3 +199,7 @@ btnCloseDetails.addEventListener("click",()=>{
   sectionMoreDetails.classList.remove("show")
 })
 
+//DISPLAY SECTION COURSES 
+
+
+FUNCTION.displayCourses()

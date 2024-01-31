@@ -123,8 +123,75 @@ export function myAccordionAssign(){
   }
 }
 
-//ACCORDION 
+//assign short course info to my panels of my accordion
 
+let newLiShorts
+
+let firstPanelShorts = document.querySelector("#firstPanel").querySelector("ul")
+
+let secondPanelShorts = document.querySelector("#secondPanel").querySelector("ul")
+
+let thirdPanelShorts = document.querySelector("#thirdPanel").querySelector("ul")
+
+let fourthPanelShorts = document.querySelector("#fourthPanel").querySelector("ul")
+
+let fifthPanelShorts = document.querySelector("#fifthPanel").querySelector("ul")
+
+let sixthPanelShorts = document.querySelector("#sixthPanel").querySelector("ul")
+
+export function myAccordionShorts(){
+
+  for (let i = 0; i <= Object.values(data.formations)[1].length-1; i++) {
+  
+    if (Object.values(data.formations)[1][i].pack == "Pack Web" || Object.values(data.formations)[1][i].pack == "Pack Web - Coding" || Object.values(data.formations)[1][i].pack == "Pack Coding") {
+      
+      newLiShorts = document.createElement("li")
+
+      newLiShorts.innerText = Object.values(data.formations)[1][i].nom
+
+      firstPanelShorts.appendChild(newLiShorts)
+        
+  } else if (Object.values(data.formations)[1][i].pack == "Pack Design" || Object.values(data.formations)[1][i].pack == "Pack Design - Content creator"){
+  
+    newLiShorts = document.createElement("li")
+
+    newLiShorts.innerText = Object.values(data.formations)[1][i].nom
+
+    secondPanelShorts.appendChild(newLiShorts)
+  
+  } else if (Object.values(data.formations)[1][i].pack == "Pack audiovisuel - Content creator" || Object.values(data.formations)[1][i].pack == "Pack audiovisuel"){
+  
+    newLiShorts = document.createElement("li")
+
+    newLiShorts.innerText = Object.values(data.formations)[1][i].nom
+
+    thirdPanelShorts.appendChild(newLiShorts)
+  } else if (Object.values(data.formations)[1][i].pack == "Pack E-commerce - Entrepreneur"){
+  
+    newLiShorts = document.createElement("li")
+
+    newLiShorts.innerText = Object.values(data.formations)[1][i].nom
+
+    fourthPanelShorts.appendChild(newLiShorts)
+  } else if (Object.values(data.formations)[1][i].pack == "Pack Entrepreneur - Web"){
+  
+    newLiShorts = document.createElement("li")
+
+    newLiShorts.innerText = Object.values(data.formations)[1][i].nom
+
+    fifthPanelShorts.appendChild(newLiShorts)
+  } else if (Object.values(data.formations)[1][i].pack == "Pack Content creator - Entrepreneur - Ecommerce"){
+  
+    newLiShorts = document.createElement("li")
+
+    newLiShorts.innerText = Object.values(data.formations)[1][i].nom
+
+    sixthPanelShorts.appendChild(newLiShorts)
+  }
+}
+}
+
+//ACCORDION FAQ: click on my btns to show text below
 
 export function myAccordion(){
 
@@ -145,6 +212,57 @@ export function myAccordion(){
         });
       }
 }
+
+//ACCORDION SHORT COURSE: click on my btns to show text below
+
+export function accordionShorts(){
+
+  let accordionShorts = document.querySelectorAll(".accordion-shorts");
+
+    for (let i = 0; i < accordionShorts.length; i++) {
+
+        accordionShorts[i].addEventListener("click", function() {
+      
+          //Toggle between hiding and showing the panel
+          let  panel = this.nextElementSibling;
+      
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+}
+
+//SELECT COURSES DISPLAY
+
+let sectionLongCourses = document.querySelector(".details-courses")
+
+let sectionShortCourses = document.querySelector(".courses-short")
+
+let btnLongCourses = document.querySelector(".btn-course-one")
+
+let btnShortCourses = document.querySelector(".btn-course-two")
+
+
+export function displayCourses(){
+
+  btnLongCourses.addEventListener("click",()=>{
+    sectionShortCourses.classList.add("hide")
+    sectionLongCourses.classList.remove("hide")
+    document.querySelector(".header-following-section").querySelector("h1").innerText = "LONG COURSES"
+  })
+
+  btnShortCourses.addEventListener("click",()=>{
+    sectionShortCourses.classList.remove("hide")
+    sectionLongCourses.classList.add("hide")
+    document.querySelector(".header-following-section").querySelector("h1").innerText = "SHORT COURSES"
+  })
+
+}
+
+
 
 
 

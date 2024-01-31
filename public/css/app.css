@@ -11920,6 +11920,10 @@ header .navbar a {
   margin: 0;
   padding: 0;
 }
+header .navbar a:hover {
+  color: black;
+  font-weight: bolder;
+}
 header .navbar .my-btn-nav {
   height: 48px;
   width: 100px;
@@ -12514,10 +12518,11 @@ footer #footerBtn:hover p {
 
 .courses-options {
   width: 100%;
-  height: 350px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .courses-options .container-courses {
   width: 90%;
@@ -12588,19 +12593,33 @@ footer #footerBtn:hover p {
   font-family: Inter;
 }
 .courses-options .container-courses .description-courses .courses-btns .btn-course-one:hover {
-  background: #c8b747;
+  background: #984d89;
 }
 .courses-options .container-courses .description-courses .courses-btns .btn-course-one:hover p {
   color: white;
 }
 .courses-options .container-courses .description-courses .courses-btns .btn-course-two:hover {
-  background: #984d89;
+  background: #c8b747;
 }
 .courses-options .container-courses .description-courses .courses-btns .btn-course-two:hover p {
   color: white;
 }
+.courses-options .header-following-section {
+  position: absolute;
+  left: 70px;
+  bottom: -5px;
+}
+.courses-options .header-following-section h1, .courses-options .header-following-section .h1 {
+  font-family: Fira Sans Extra Condensed;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 70px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+}
 
-#long {
+.details-courses {
   width: 100%;
   height: 500px;
   background: #984d89;
@@ -12609,7 +12628,7 @@ footer #footerBtn:hover p {
   justify-content: center;
   align-items: center;
 }
-#long .details-courses-container {
+.details-courses .details-courses-container {
   width: 90%;
   height: 90%;
   position: absolute;
@@ -12618,26 +12637,28 @@ footer #footerBtn:hover p {
   align-items: center;
   gap: 30px;
 }
-#long .details-courses-container .our-courses-boxes, #long .details-courses-container row {
+.details-courses .details-courses-container .our-courses-boxes, .details-courses .details-courses-container row {
   width: 100%;
   height: 200px;
+  cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-#long .details-courses-container .our-courses-boxes .my-div-course, #long .details-courses-container .our-courses-boxes col, #long .details-courses-container row .my-div-course, #long .details-courses-container row col {
+.details-courses .details-courses-container .our-courses-boxes .my-div-course, .details-courses .details-courses-container .our-courses-boxes col, .details-courses .details-courses-container row .my-div-course, .details-courses .details-courses-container row col {
   display: none;
   height: 190px;
   border-radius: 20px;
   border: 2px white solid;
   background: white;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#long .details-courses-container .our-courses-boxes .my-div-course h2, #long .details-courses-container .our-courses-boxes .my-div-course .h2, #long .details-courses-container .our-courses-boxes col h2, #long .details-courses-container .our-courses-boxes col .h2, #long .details-courses-container row .my-div-course h2, #long .details-courses-container row .my-div-course .h2, #long .details-courses-container row col h2, #long .details-courses-container row col .h2 {
+.details-courses .details-courses-container .our-courses-boxes .my-div-course h2, .details-courses .details-courses-container .our-courses-boxes .my-div-course .h2, .details-courses .details-courses-container .our-courses-boxes col h2, .details-courses .details-courses-container .our-courses-boxes col .h2, .details-courses .details-courses-container row .my-div-course h2, .details-courses .details-courses-container row .my-div-course .h2, .details-courses .details-courses-container row col h2, .details-courses .details-courses-container row col .h2 {
   font-family: Inter;
   font-weight: bolder;
   font-size: 18px;
@@ -12645,22 +12666,23 @@ footer #footerBtn:hover p {
   margin: 0;
   text-align: center;
 }
-#long .hide {
+.details-courses .hide {
   display: none;
 }
-#long .container-more-details {
+.details-courses .container-more-details {
   width: 90%;
   height: 90%;
-  position: absolute;
-  top: 55px;
-  left: 450px;
   display: none;
+  position: relative;
 }
-#long .container-more-details .more-details-on-course {
+.details-courses .container-more-details .more-details-on-course {
   width: 45%;
   height: 80%;
   background: white;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding-left: 20px;
   border-radius: 5px;
   border: 3px solid white;
@@ -12670,7 +12692,7 @@ footer #footerBtn:hover p {
   align-items: flex-start;
   flex-direction: column;
 }
-#long .container-more-details .more-details-on-course .name-course {
+.details-courses .container-more-details .more-details-on-course .name-course {
   width: 80%;
   height: 90px;
   margin-bottom: 10px;
@@ -12679,7 +12701,7 @@ footer #footerBtn:hover p {
   justify-content: flex-start;
   align-items: flex-start;
 }
-#long .container-more-details .more-details-on-course .name-course h1, #long .container-more-details .more-details-on-course .name-course .h1 {
+.details-courses .container-more-details .more-details-on-course .name-course h1, .details-courses .container-more-details .more-details-on-course .name-course .h1 {
   font-family: Fira Sans Extra Condensed;
   font-weight: 900;
   font-size: 45px;
@@ -12689,7 +12711,7 @@ footer #footerBtn:hover p {
   padding: 0;
   color: #c8b747;
 }
-#long .container-more-details .more-details-on-course .all-my-details {
+.details-courses .container-more-details .more-details-on-course .all-my-details {
   width: 100%;
   height: 100%;
   padding-top: 30px;
@@ -12699,20 +12721,20 @@ footer #footerBtn:hover p {
   flex-direction: column;
   gap: 40px;
 }
-#long .container-more-details .more-details-on-course .all-my-details .description {
+.details-courses .container-more-details .more-details-on-course .all-my-details .description {
   width: 100%;
   height: 30px;
   display: flex;
   justify-content: flex-start;
 }
-#long .container-more-details .more-details-on-course .all-my-details .description p {
+.details-courses .container-more-details .more-details-on-course .all-my-details .description p {
   margin: 0;
   padding: 0;
   font-family: Inter;
   font-size: 16px;
   color: black;
 }
-#long .container-more-details .more-details-on-course .all-my-details .duration {
+.details-courses .container-more-details .more-details-on-course .all-my-details .duration {
   width: 100%;
   height: 30px;
   display: flex;
@@ -12720,14 +12742,14 @@ footer #footerBtn:hover p {
   justify-content: flex-start;
   gap: 20px;
 }
-#long .container-more-details .more-details-on-course .all-my-details .duration p {
+.details-courses .container-more-details .more-details-on-course .all-my-details .duration p {
   margin: 0;
   padding: 0;
   font-family: Inter;
   font-size: 14px;
   color: black;
 }
-#long .container-more-details .more-details-on-course .all-my-details .requirements {
+.details-courses .container-more-details .more-details-on-course .all-my-details .requirements {
   width: 100%;
   height: 70px;
   display: flex;
@@ -12735,14 +12757,14 @@ footer #footerBtn:hover p {
   justify-content: flex-start;
   gap: 20px;
 }
-#long .container-more-details .more-details-on-course .all-my-details .requirements p {
+.details-courses .container-more-details .more-details-on-course .all-my-details .requirements p {
   margin: 0;
   padding: 0;
   font-family: Inter;
   font-size: 14px;
   color: black;
 }
-#long .container-more-details .more-details-on-course .btn-close-details {
+.details-courses .container-more-details .more-details-on-course .btn-close-details {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -12758,20 +12780,88 @@ footer #footerBtn:hover p {
   justify-content: center;
   align-items: center;
 }
-#long .container-more-details .more-details-on-course .btn-close-details p {
+.details-courses .container-more-details .more-details-on-course .btn-close-details p {
   font-family: Inter;
   font-size: 18px;
   margin: 0;
   padding: 0;
 }
-#long .container-more-details .more-details-on-course .btn-close-details:hover {
+.details-courses .container-more-details .more-details-on-course .btn-close-details:hover {
   background: #c8b747;
 }
-#long .container-more-details .more-details-on-course .btn-close-details:hover p {
+.details-courses .container-more-details .more-details-on-course .btn-close-details:hover p {
   color: white;
 }
-#long .show {
+.details-courses .show {
   display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.courses-short {
+  width: 100%;
+  max-height: 800px;
+  background: #c8b747;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.courses-short .shorts-accordion-container {
+  width: 90%;
+  height: 90%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.courses-short .shorts-accordion-container .accordion-shorts {
+  margin-top: 20px;
+  height: 48px;
+  width: 800px;
+  font-family: Inter;
+  font-size: 16px;
+  background: white;
+  letter-spacing: 1px;
+  border: 3px solid black;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.courses-short .shorts-accordion-container .accordion-shorts p {
+  font-family: Inter;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+.courses-short .shorts-accordion-container .accordion-shorts:hover {
+  background: black;
+  border: 3px solid white;
+  box-shadow: 1px 1px 0px 0px white, 2px 2px 0px 0px white, 2px 2px 0px 0px white, 4px 4px 0px 0px white, 3px 3px 0px 0px white;
+}
+.courses-short .shorts-accordion-container .accordion-shorts:hover p {
+  color: white;
+}
+.courses-short .shorts-accordion-container .panel-shorts {
+  width: 800px;
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.courses-short .shorts-accordion-container .panel-shorts li {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 18px;
+  color: black;
+}
+
+.hide {
+  display: none;
 }
 
 .why-molenGeek {

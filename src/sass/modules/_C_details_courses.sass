@@ -1,4 +1,4 @@
-#long
+.details-courses
     width: 100%
     height: 500px
     background: #984d89
@@ -19,6 +19,7 @@
         .our-courses-boxes,row
             width: 100%
             height: 200px
+            cursor: pointer
 
             display: flex
             flex-wrap: wrap
@@ -31,6 +32,7 @@
                 border-radius: 20px
                 border: 2px white solid
                 background: white
+                box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px
 
                 display: flex
                 justify-content: center
@@ -47,15 +49,18 @@
     .container-more-details
         width: 90%
         height: 90%
-        position: absolute
-        top: 55px
-        left: 450px
+
         display: none
+        position: relative
         .more-details-on-course
             width: 45%
             height: 80%
             background: white
-            position: relative
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+
             padding-left: 20px
             border-radius: 5px
             border: 3px solid white
@@ -162,6 +167,9 @@
                     color: white
     .show
         display: block
+.hide
+    display: none
+
                 
                 
 
