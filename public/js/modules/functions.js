@@ -281,6 +281,33 @@ for (let i = 0; i < data.formations.seancesInfos.length; i++) {
 
 }
 
+//CREATE JOB BOXES
 
+export function assignJobs(){
+  
+  data.jobs.forEach(element => {
+  
+    let newJobBox = document.createElement("div")
+  
+    newJobBox.setAttribute("class","col-3")
+  
+    let newPJob = document.createElement("p")
+  
+    let newH1Job = document.createElement("h1")
+  
+    newPJob.innerText = element.description
+  
+    newH1Job.innerText = element.poste
+  
+    newJobBox.appendChild(newH1Job)
+  
+    newJobBox.appendChild(newPJob)
+  
+    document.querySelector(".all-my-descriptions").appendChild(newJobBox)
+  
+  });
+  
+  
+  
 
-
+}

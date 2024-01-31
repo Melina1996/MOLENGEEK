@@ -48,7 +48,11 @@ INSTANCE.myScrollbutton.addEventListener("click",()=>{
   document.documentElement.scrollTop = 0;
 })
 
-//change colors of my Banner and certain fonts
+//BANNER: change bckg-color & first section: change colors
+
+let myBanner = document.querySelector(".banner-slogan")
+
+myBanner.style.background = "#984d89"
 
 let myWhoWeAre = document.querySelector(".who-we-are")
 
@@ -58,8 +62,10 @@ let myH1WhoWeAre = document.querySelector(".text-left").querySelector("h1")
 
 myH1WhoWeAre.style.color = "black"
 
-//ASSIGN EVENT DATES AND NAMES
+let jobOffersH1 = document.querySelector(".header-next-section").querySelector("h1")
 
-FUNCTION.assignEventDates()
+jobOffersH1.style.color = "#c8b747"
 
-//CREATE JOB BOXES
+//CREATE BOXES AND ASSIGN CONTENTS
+
+FUNCTION.assignJobs()
