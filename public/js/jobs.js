@@ -69,3 +69,7 @@ jobOffersH1.style.color = "#c8b747"
 //CREATE BOXES AND ASSIGN CONTENTS
 
 FUNCTION.assignJobs()
+
+//HOVER TITLE CHANGE COLOR
+
+FUNCTION.changeColorHeader()

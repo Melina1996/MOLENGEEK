@@ -11899,16 +11899,16 @@ body {
 header {
   width: 100%;
   height: 80px;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header .navbar {
   height: 100%;
-  width: 95%;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
   font-family: Inter;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11927,6 +11927,7 @@ header .navbar a:hover {
 header .navbar .my-btn-nav {
   height: 48px;
   width: 100px;
+  margin-right: 15px;
   font-family: Inter;
   font-size: 16px;
   background: white;
@@ -11956,12 +11957,13 @@ header .navbar .my-logo {
   align-items: center;
 }
 header .navbar .my-burger-menu {
-  width: 30px;
+  width: 35px;
   cursor: pointer;
+  margin-right: 15px;
 }
 header .navbar .my-burger-menu .line {
   width: 100%;
-  height: 2px;
+  height: 3px;
   margin-bottom: 10px;
   background-color: black;
   cursor: pointer;
@@ -12125,7 +12127,7 @@ main {
 
 .our-services {
   width: 100%;
-  height: 300px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12145,21 +12147,43 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 .our-services .services-container .our-services-boxes .my-div-service {
-  height: 190px;
-  border-radius: 20px;
-  border: 2px #c8b747 solid;
+  font-family: Inter;
+  font-size: 16px;
+  height: 200px;
+  width: 250px;
+  background: white;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .our-services .services-container .our-services-boxes .my-div-service h2, .our-services .services-container .our-services-boxes .my-div-service .h2 {
-  font-family: Fira Sans Extra Condensed;
-  font-weight: 900;
+  font-family: Inter;
+  font-weight: bolder;
+  font-size: 20px;
   padding: 0;
   margin: 0;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.our-services .services-container .our-services-boxes .my-div-service a {
+  text-decoration: none;
+  color: black;
+}
+.our-services .services-container .our-services-boxes .my-div-service:hover {
+  box-shadow: 1px 1px 0px 0px #c8b747, 2px 2px 0px 0px #c8b747, 2px 2px 0px 0px #c8b747, 4px 4px 0px 0px #c8b747, 3px 3px 0px 0px #c8b747;
+}
+.our-services .services-container .our-services-boxes .my-div-service:hover p {
+  color: #c8b747;
+  font-weight: bolder;
 }
 
 .our-events {
@@ -12378,6 +12402,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: solid 2px black;
 }
 .newsletter .newsletter-container {
   width: 90%;
@@ -12513,6 +12538,12 @@ footer #footerBtn:hover p {
   color: white;
 }
 .banner-slogan h1 span, .banner-slogan .h1 span {
+  color: black;
+}
+.banner-slogan h1 .change-color, .banner-slogan .h1 .change-color {
+  color: white;
+}
+.banner-slogan .change-color {
   color: black;
 }
 
@@ -12653,8 +12684,8 @@ footer #footerBtn:hover p {
 .details-courses .details-courses-container .our-courses-boxes .my-div-course, .details-courses .details-courses-container .our-courses-boxes col, .details-courses .details-courses-container row .my-div-course, .details-courses .details-courses-container row col {
   display: none;
   height: 190px;
-  border-radius: 20px;
-  border: 2px white solid;
+  border: 3px solid black;
+  border-radius: 5px;
   background: white;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
   display: flex;
@@ -13177,6 +13208,7 @@ footer #footerBtn:hover p {
   background: white;
   letter-spacing: 1px;
   padding-top: 15px;
+  border-radius: 5px;
   border: 3px solid black;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
   display: flex;

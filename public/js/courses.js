@@ -203,3 +203,7 @@ btnCloseDetails.addEventListener("click",()=>{
 
 
 FUNCTION.displayCourses()
+
+//HOVER TITLE CHANGE COLOR
+
+FUNCTION.changeColorHeader()

@@ -47,30 +47,3 @@ INSTANCE.myScrollbutton.addEventListener("click",()=>{
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 })
-
-//BANNER: change bckg-color & first section: change colors
-
-let myBanner = document.querySelector(".banner-slogan")
-
-myBanner.style.background = "#984d89"
-
-let myWhoWeAre = document.querySelector(".who-we-are")
-
-myWhoWeAre.style.background = "white"
-
-let myH1WhoWeAre = document.querySelector(".text-left").querySelector("h1")
-
-myH1WhoWeAre.style.color = "black"
-
-//Text style changes
-
-let myTextRight = document.querySelector(".text-right").querySelector("h1")
-
-myTextRight.querySelectorAll("span").forEach(element => {
-    element.style.color = "#c8b747"
-    element.style.fontWeight = "bolder"
-});
-
-//HOVER TITLE CHANGE COLOR
-
-FUNCTION.changeColorHeader()

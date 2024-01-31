@@ -284,7 +284,7 @@ for (let i = 0; i < data.formations.seancesInfos.length; i++) {
 //CREATE JOB BOXES
 
 export function assignJobs(){
-  
+
   data.jobs.forEach(element => {
   
     let newJobBox = document.createElement("div")
@@ -307,7 +307,14 @@ export function assignJobs(){
   
   });
   
-  
-  
-
 }
+
+export function changeColorHeader(){
+  let header = document.querySelector(".banner-slogan").querySelector("h1")
+
+  header.addEventListener("mouseover",()=>{
+    header.classList.toggle("change-color")
+    header.querySelector("span").classList.toggle("change-color")
+  })
+}
+

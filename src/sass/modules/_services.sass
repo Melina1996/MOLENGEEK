@@ -1,6 +1,6 @@
 .our-services
     width: 100%
-    height: 300px
+    height: 450px
 
     display: flex
     flex-direction: column
@@ -21,20 +21,39 @@
             display: flex
             justify-content: center
             align-items: center
-            gap: 10px
+            gap: 30px
             .my-div-service
-                height: 190px
-                border-radius: 20px
-                border: 2px #c8b747 solid
+                font-family: Inter
+                font-size: 16px
+                height: 200px
+                width: 250px
+                background: white
+                letter-spacing: 1px
+                padding-top: 15px
+                border: 3px solid black
+                border-radius: 5px
+                box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px
 
                 display: flex
                 justify-content: center
                 align-items: center
+                flex-direction: column
                 h2
-                    font-family: Fira Sans Extra Condensed
-                    font-weight: 900 
+                    font-family: Inter
+                    font-weight: bolder
+                    font-size: 20px 
                     padding: 0
                     margin: 0
+                    text-align: center
+                    letter-spacing: 3px
+                a
+                    text-decoration: none
+                    color: black
+            .my-div-service:hover
+                box-shadow: 1px 1px 0px 0px #c8b747, 2px 2px 0px 0px #c8b747, 2px 2px 0px 0px #c8b747, 4px 4px 0px 0px #c8b747, 3px 3px 0px 0px #c8b747
+                p
+                    color: #c8b747
+                    font-weight: bolder
 
 
 

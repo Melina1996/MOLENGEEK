@@ -63,3 +63,7 @@ myH1WhoWeAre.style.color = "black"
 FUNCTION.assignEventDates()
 
 //CREATE JOB BOXES
+
+//HOVER TITLE CHANGE COLOR
+
+FUNCTION.changeColorHeader()
