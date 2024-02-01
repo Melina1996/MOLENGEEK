@@ -48,8 +48,9 @@ let carouselBtns = document.querySelectorAll("[data-carousel-button]")
 
 carouselBtns.forEach(element => {
   element.addEventListener("click",()=>{
+    
     let offset = element.dataset.carouselButton === "next" ? 1 : -1
-    console.log(offset)
+
     let mySlides = element.closest("[data-carousel]").querySelector("[data-slides]")
     let activeSlide = document.querySelector("[data-active]")
     //create Array with the children of all of my slides and get index of my active one
@@ -192,55 +193,5 @@ for (let i = 0; i <= 2; i++) {
   }
 }
 
-// data.formations.seancesInfos.forEach(element => {
 
-//   //create DIV for each-event
-//   eachEvent = document.createElement("div")
-
-//   eachEvent.setAttribute("class","each-event")
-
-//   //create DIV for each-date within DIV each-event
-
-//   eachDate = document.createElement("div")
-
-//   eachDate.setAttribute("class","date")
-
-//   eventPone = document.createElement("p")
-
-//   eventPone.innerText = element.date
-
-//   eachDate.appendChild(eventPone)
-
-//   eachEvent.appendChild(eachDate)
-
-//   //create DIV for each-bar with name of the event
-
-//   eachBar = document.createElement("div")
-
-//   eachBar.setAttribute("class","my-bar")
-
-//   eventPtwo = document.createElement("p")
-
-//   eventPtwo.innerText = element.nom.toLocaleUpperCase()
-
-//   eachBar.appendChild(eventPtwo)
-
-//   eachEvent.appendChild(eachBar)
-
-//   INSTANCE.myEventContainer.appendChild(eachEvent)
-
-//   if(element.date == "19/02"){
-//     eachBar.style.width = "300px"
-//   } else if(element.date == "22/02"){
-//     eachBar.style.width = "400px"
-//   } else if(element.date == "26/02"){
-//     eachBar.style.width = "500px"
-//   } else if(element.date == "29/02"){
-//     eachBar.style.width = "600px"
-//   } else if(element.date == "04/03"){
-//     eachBar.style.width = "700px"
-//   } else if(element.date == "07/03"){
-//     eachBar.style.width = "800px"
-//   }
-// });
 

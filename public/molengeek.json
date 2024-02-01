@@ -10,67 +10,67 @@
         "formationsLongues": {
             "codingSchool": {
                 "nom": "Coding School",
-                "duree": "6 mois",
-                "descriptif": "Apprends à coder un site internet de A à Z",
+                "duree": "6 months",
+                "descriptif": "Learn how to code a website from A to Z",
                 "condition": {
-                    "ageMax": "29 ans",
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "ageMax": "29 years old",
+                    "situation": "Job seeker",
+                    "prix": "FREE",
+                    "horaire": "full-time 9h / 17h"
                 }
             },
             "marketingDigital": {
-                "nom": "Marketing Digital",
-                "duree": "6 mois",
-                "descriptif": "Forme-toi au marketing digital",
+                "nom": "Digital Marketing",
+                "duree": "6 months",
+                "descriptif": "Learn about digital marketing",
                 "condition": {
-                    "ageMax": "29 ans",
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "ageMax": "29 years old",
+                    "situation": "Job seeker",
+                    "prix": "FREE",
+                    "horaire": "full-time 9h / 17h"
                 }
             },
             "webmaster360": {
                 "nom": "Webmaster 360",
-                "duree": "6 mois",
-                "descriptif": "Crée des sites performants et attractifs avec WordPress",
+                "duree": "6 months",
+                "descriptif": "Create high-performance, attractive websites with WordPress",
                 "condition": {
                     "ageMax": null,
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "situation": "Job seeker",
+                    "prix": "FREE",
+                    "horaire": "full-time 9h / 17h"
                 }
             },
             "aws": {
                 "nom": "AWS re/Start",
-                "duree": "3 mois",
-                "descriptif": "Développe tes compétences en Cloud",
+                "duree": "3 months",
+                "descriptif": "Develop your Cloud skills",
                 "condition": {
-                    "ageMax": "29 ans",
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "ageMax": "29 years old",
+                    "situation": "Job seeker",
+                    "prix": "FREE",
+                    "horaire": "full-time 9h / 17h"
                 }
             },
             "salesforceAdmin": {
-                "nom": "Salesforce Administrateur",
-                "duree": "3 mois",
-                "descriptif": "Optimise un bon service client grâce à Salesforce",
+                "nom": "Salesforce Administrator",
+                "duree": "3 months",
+                "descriptif": "Optimize customer service with Salesforce",
                 "condition": {
                     "ageMax": null,
-                    "situation": "Demandeur d'emploi",
-                    "prix": "Gratuit",
-                    "horaire": "temps plein 9h / 17h"
+                    "situation": "Job seeker",
+                    "prix": "FREE",
+                    "horaire": "full-time 9h / 17h"
                 }
             }
         },
         "formationsCourtes": [
             {
-                "nom": "HTML & CSS Débutant",
+                "nom": "HTML & CSS BEGINNERS",
                 "pack": "Pack Web"
             },
             {
-                "nom": "HTML & CSS Avancé",
+                "nom": "HTML & CSS ADVANCED",
                 "pack": "Pack Web"
             },
             {
@@ -82,11 +82,11 @@
                 "pack": "Pack Coding"
             },
             {
-                "nom": "Photoshop Débutant",
+                "nom": "Photoshop BEGINNERS",
                 "pack": "Pack Design"
             },
             {
-                "nom": "Photoshop Avancé",
+                "nom": "Photoshop ADVANCED",
                 "pack": "Pack Design"
             },
             {
@@ -110,11 +110,11 @@
                 "pack": "Pack audiovisuel"
             },
             {
-                "nom": "Shopify Débutant",
+                "nom": "Shopify BEGINNERS",
                 "pack": "Pack E-commerce - Entrepreneur"
             },
             {
-                "nom": "Shopify Avancé",
+                "nom": "Shopify ADVANCED",
                 "pack": "Pack E-commerce - Entrepreneur"
             },
             {
@@ -126,46 +126,46 @@
                 "pack": "Pack E-commerce - Entrepreneur"
             },
             {
-                "nom": "Wordpress Débutant",
+                "nom": "Wordpress BEGINNERS",
                 "pack": "Pack Entrepreneur - Web"
             },
             {
-                "nom": "Wordpress Avancé",
+                "nom": "Wordpress ADVANCED",
                 "pack": "Pack Entrepreneur - Web"
             },
             {
-                "nom": "Réseaux Sociaux Débutant",
+                "nom": "Social Media BEGINNERS",
                 "pack": "Pack Content creator - Entrepreneur - Ecommerce"
             },
             {
-                "nom": "Réseaux Sociaux Avancé",
+                "nom": "Social Media ADVANCED",
                 "pack": "Pack Content creator - Entrepreneur - Ecommerce"
             }
         ],
         "seancesInfos": [
             {
                 "date": "19/02",
-                "nom": "séance d'information tic"
+                "nom": "TIC information session"
             },
             {
                 "date": "22/02",
-                "nom": "séance d'information Cybersecurity"
+                "nom": "Cybersecurity information session"
             },
             {
                 "date": "26/02",
-                "nom": "séance d'information Marketing Lab"
+                "nom": "Marketing Lab information session"
             },
             {
                 "date": "29/02",
-                "nom": "séance d'information Coding School"
+                "nom": "Coding School information session"
             },
             {
                 "date": "04/03",
-                "nom": "séance d'information AWS"
+                "nom": "AWS information session"
             },
             {
                 "date": "07/03",
-                "nom": "séance d'information Salesforce"
+                "nom": "Salesforce information session"
             }
         ]
     },
@@ -214,16 +214,16 @@
         "videoII": "https://youtu.be/XzKHGe1BWI4"
     },
     "FAQ": {
-        "questionI": "Quel est le planning des formations ?",
-        "reponseI": "Retrouve le programme des prochaines formations sur la page d’accueil",
-        "questionII": "Faut-il des pré-requis pour s’inscrire à une formation ?",
-        "reponseII": "Aucun prérequis n’est demandé pour s’inscire aux formations",
-        "questionIII": "Puis-je m’inscrire si je ne suis pas demandeur d’emploi ?",
-        "reponseIII": "Si tu n’es pas demandeur d’emploi, contacte-nous et nous te remettrons un devis .",
-        "questionIV": "Quelles formations puis-je suivre si je ne suis pas demandeur d’emploi ?",
-        "reponseIV": "Toutes les formations courtes sont accessibles aux particuliers et entreprises. Contacte-nous pour plus d’information",
-        "questionV": "Combien coûtent les formations à MolenGeek ?",
-        "reponseV": "Les formations sont gratuites pour les demandeurs d’emploi sur présentation de chèques Tic disponibles chez Actiris . Pour les particuliers et entreprises, il faut nous contacter pour recevoir un devis."
+        "questionI": "What is the training schedule?",
+        "reponseI": "Find the program of upcoming training courses on the home page.",
+        "questionII": "Are there any prerequisites for enrolling in a training course?",
+        "reponseII": "No prerequisites are required to enroll in training courses.",
+        "questionIII": "Can I register if I'm not a job seeker?",
+        "reponseIII": "If you're not unemployed, contact us and we'll give you a quote.",
+        "questionIV": "What training courses can I take if I'm not looking for work?",
+        "reponseIV": "All short courses are available to individuals and companies. Contact us for more information",
+        "questionV": "How much does it cost to train at MolenGeek?",
+        "reponseV": "Training courses are free for jobseekers on presentation of TIC vouchers available from Actiris . For individuals and companies, please contact us for a quote."
     },
     "articles": [
         {
@@ -345,35 +345,35 @@
     "jobs": [
         {
             "poste": "Talent Strategist",
-            "description": "Nous recherchons actuellement des passionnés du onboarding pour rejoindre notre équipe dynamique de stratèges talentueux."
+            "description": "We're currently looking for onboarding enthusiasts to join our dynamic team of talented strategists."
         },
         {
-            "poste": "Gestionnaire de bâtiment et des services généraux",
-            "description": "Le gestionnaire de bâtiment et des services généraux est responsable de veiller au bon fonctionnement et à la maintenance du bâtiment."
+            "poste": "Building and Facilities Manager",
+            "description": "The Building and General Services Manager is responsible for ensuring the smooth running and maintenance of the building."
         },
         {
-            "poste": "Monteur Vidéo",
-            "description": "En tant que Monteur Vidéo chez Molengeek, vous serez le maître de la mise en scène visuelle, contribuant à façonner le récit de Molengeek à travers des contenus vidéo percutants."
+            "poste": "Video Editor",
+            "description": "As a Video Editor at Molengeek, you'll be the master of visual staging, helping to shape Molengeek's story through compelling video content."
         },
         {
-            "poste": "Ressources Humaines",
-            "description": "Responsable des Ressources Humaines chez MolenGeek – Jouez un rôle clé dans une aventure unique au cœur d’un écosystème technologique qui innove sans cesse !"
+            "poste": "Human Resources",
+            "description": "Human Resources Manager at MolenGeek - Play a key role in a unique adventure at the heart of a constantly innovating technological ecosystem!"
         },
         {
             "poste": "Designer",
-            "description": "En tant que Designer chez Molengeek, vous incarnerez la créativité visuelle au cœur de notre écosystème technologique et entrepreneurial."
+            "description": "As a Designer at Molengeek, you'll embody visual creativity at the heart of our technological and entrepreneurial ecosystem."
         },
         {
             "poste": "Project Manager",
-            "description": "En tant que Project Manager chez Molengeek, vous serez le chef d’orchestre des initiatives et des projets au sein de notre écosystème dynamique axé sur la technologie et l’entrepreneuriat."
+            "description": "As a Project Manager at Molengeek, you'll be leading initiatives and projects within our dynamic ecosystem focused on technology and entrepreneurship."
         },
         {
-            "poste": "Assistant de Production",
-            "description": "En tant qu’Assistant de Production pour des tournages chez MolenGeek, vous jouerez un rôle essentiel dans la réalisation fluide et réussie de projets visuels."
+            "poste": "Production Assistant",
+            "description": "As a Production Assistant for shoots at MolenGeek, you'll play an essential role in the smooth, successful realization of visual projects."
         },
         {
-            "poste": "Business Analyst Junior",
-            "description": "Envie de rejoindre notre équipe dynamique et innovante ? Embarquez pour une aventure exceptionnelle au sein d’un écosystème technologique vibrant, où chaque jour est une opportunité de redéfinir les règles du jeu !"
+            "poste": "Junior Business Analyst",
+            "description": "Would you like to join our dynamic and innovative team? Embark on an exceptional adventure in a vibrant technological ecosystem, where every day is an opportunity to redefine the rules of the game!"
         }
     ],
     "molengeekLogo": "https://molengeek.com/wp-content/uploads/2022/02/MG_LOGO_V3x50-1.png"

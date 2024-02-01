@@ -12045,9 +12045,9 @@ header .navbar .all-my-links {
 }
 
 .my-banner::before {
-  background-image: url(../../public/assets/img/pexels-karolina-grabowska-8092507.jpg);
+  background-image: url(../../public/assets/img/authentic-book-club-scene.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   position: absolute;
   content: "";
@@ -12102,6 +12102,16 @@ header .navbar .all-my-links {
 .who-we-are .my-container-who-we-are .text-right h1, .who-we-are .my-container-who-we-are .text-right .h1 {
   font-family: Inter;
   font-size: 18px;
+  line-height: 30px;
+}
+.who-we-are .my-container-who-we-are .text-right h1 .first-span, .who-we-are .my-container-who-we-are .text-right .h1 .first-span {
+  font-weight: bolder;
+}
+.who-we-are .my-container-who-we-are .text-right h1 .second-span, .who-we-are .my-container-who-we-are .text-right .h1 .second-span {
+  color: #c8b747;
+  font-weight: bolder;
+  font-family: Inter;
+  font-size: 20px;
   line-height: 30px;
 }
 .who-we-are .my-container-who-we-are .header-next-section {
@@ -12263,7 +12273,7 @@ main {
   background: white;
   letter-spacing: 1px;
   border: 3px solid black;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+  box-shadow: 1px 1px 0px 0px black, 2px 2px 0px 0px black, 2px 2px 0px 0px black, 4px 4px 0px 0px black, 3px 3px 0px 0px black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12275,7 +12285,8 @@ main {
 }
 .our-events button:hover {
   background: black;
-  color: white;
+  border: 3px solid white;
+  box-shadow: 1px 1px 0px 0px white, 2px 2px 0px 0px white, 2px 2px 0px 0px white, 4px 4px 0px 0px white, 3px 3px 0px 0px white;
 }
 .our-events button:hover p {
   color: white;
@@ -12709,6 +12720,10 @@ footer #footerBtn:hover p {
   padding: 0;
   margin: 0;
   text-align: center;
+}
+.details-courses .details-courses-container .our-courses-boxes .my-div-course:hover, .details-courses .details-courses-container row .my-div-course:hover {
+  box-shadow: 1px 1px 0px 0px #c8b747, 2px 2px 0px 0px #c8b747, 2px 2px 0px 0px #c8b747, 4px 4px 0px 0px #c8b747, 3px 3px 0px 0px #c8b747;
+  border: 3px solid #c8b747;
 }
 .details-courses .hide {
   display: none;
@@ -13688,8 +13703,11 @@ footer #footerBtn:hover p {
   }
   .who-we-are .my-container-who-we-are .text-right h1, .who-we-are .my-container-who-we-are .text-right .h1 {
     font-family: Inter;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
+  }
+  .who-we-are .my-container-who-we-are .text-right .second-span {
+    font-size: 18px;
   }
   .who-we-are .my-container-who-we-are .header-next-section {
     position: absolute;
@@ -13710,7 +13728,7 @@ footer #footerBtn:hover p {
 @media (min-width: 425px) and (max-width: 768px) {
   .who-we-are {
     width: 100%;
-    height: 400px;
+    height: 450px;
     padding-top: 50px;
     background: #c8b747;
     display: flex;
@@ -13754,6 +13772,9 @@ footer #footerBtn:hover p {
     font-size: 16px;
     line-height: 30px;
   }
+  .who-we-are .my-container-who-we-are .text-right h1 .second-span, .who-we-are .my-container-who-we-are .text-right .h1 .second-span {
+    font-size: 16px;
+  }
   .who-we-are .my-container-who-we-are .header-next-section {
     position: absolute;
     left: 0;
@@ -13773,7 +13794,7 @@ footer #footerBtn:hover p {
 @media (min-width: 321px) and (max-width: 425px) {
   .who-we-are {
     width: 100%;
-    height: 600px;
+    height: 650px;
     padding-top: 50px;
     background: #c8b747;
     display: flex;
@@ -13788,13 +13809,14 @@ footer #footerBtn:hover p {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 10px;
   }
   .who-we-are .my-container-who-we-are .text-left {
     width: 100%;
-    height: 30%;
+    height: 20%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
   .who-we-are .my-container-who-we-are .text-left h1, .who-we-are .my-container-who-we-are .text-left .h1 {
     font-family: Fira Sans Extra Condensed;
@@ -13808,15 +13830,18 @@ footer #footerBtn:hover p {
   }
   .who-we-are .my-container-who-we-are .text-right {
     width: 100%;
-    height: 70%;
+    height: 80%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
   .who-we-are .my-container-who-we-are .text-right h1, .who-we-are .my-container-who-we-are .text-right .h1 {
     font-family: Inter;
     font-size: 16px;
     line-height: 30px;
+  }
+  .who-we-are .my-container-who-we-are .text-right h1 .second-span, .who-we-are .my-container-who-we-are .text-right .h1 .second-span {
+    font-size: 16px;
   }
   .who-we-are .my-container-who-we-are .header-next-section {
     position: absolute;
@@ -15210,7 +15235,7 @@ footer #footerBtn:hover p {
 @media (min-width: 321px) and (max-width: 425px) {
   .all-job-offers {
     width: 100%;
-    height: 1900px;
+    height: 2400px;
     display: flex;
     justify-content: center;
     align-items: center;
