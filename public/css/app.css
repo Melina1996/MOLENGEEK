@@ -13458,6 +13458,9 @@ footer #footerBtn:hover p {
 }
 /*Tablet*/
 @media (min-width: 425px) and (max-width: 768px) {
+  header .navbar {
+    position: relative;
+  }
   header .navbar .my-logo {
     width: 30%;
   }
@@ -13476,18 +13479,33 @@ footer #footerBtn:hover p {
   }
   header .navbar .all-my-links {
     position: absolute;
-    height: 200px;
+    height: 400px;
     width: 100vw;
-    top: 180px;
+    top: 280px;
     right: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: transparent;
     z-index: 100;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
+  }
+  header .navbar .all-my-links a {
+    color: black;
+  }
+  header .navbar .all-my-links .my-link-hover:hover {
+    color: #c8b747;
+  }
+  header .navbar .all-my-links .language-options a {
+    color: #c8b747;
+  }
+  header .navbar .all-my-links .hide {
+    display: none;
   }
   header .navbar .hide {
     display: none;
@@ -13524,16 +13542,32 @@ footer #footerBtn:hover p {
   }
   header .navbar .all-my-links {
     position: absolute;
+    height: 400px;
     width: 100vw;
-    top: 150px;
+    top: 250px;
     right: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: transparent;
+    z-index: 100;
+    backdrop-filter: blur(12px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
+  }
+  header .navbar .all-my-links a {
+    color: black;
+  }
+  header .navbar .all-my-links .my-link-hover:hover {
+    color: #c8b747;
+  }
+  header .navbar .all-my-links .language-options a {
+    color: #c8b747;
+  }
+  header .navbar .all-my-links .hide {
+    display: none;
   }
   header .navbar .hide {
     display: none;
@@ -13729,7 +13763,7 @@ footer #footerBtn:hover p {
 @media (min-width: 321px) and (max-width: 425px) {
   .who-we-are {
     width: 100%;
-    height: 500px;
+    height: 600px;
     padding-top: 50px;
     background: #c8b747;
     display: flex;
@@ -13840,47 +13874,76 @@ footer #footerBtn:hover p {
     height: 190px;
     border-radius: 20px;
     border: 2px #e6e1e3 solid;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    font-family: Inter;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .our-services .our-services-boxes .my-div-service h2, .our-services .our-services-boxes .my-div-service .h2 {
-    font-family: Fira Sans Extra Condensed;
-    font-weight: 900;
+    font-family: Inter;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
   }
 }
 /*Mobile M&L*/
 @media (min-width: 321px) and (max-width: 425px) {
   .our-services {
     width: 100%;
-    height: 300px;
+    height: 500px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
   }
-  .our-services .our-services-boxes {
-    width: 100%;
-    height: 200px;
+  .our-services .services-container {
+    width: 90%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  .our-services .services-container .our-services-boxes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
   }
-  .our-services .our-services-boxes .my-div-service {
+  .our-services .services-container .our-services-boxes .my-div-service {
     height: 190px;
     padding: 0;
     margin: 0;
-    border-radius: 20px;
+    width: 90%;
     border: 2px #e6e1e3 solid;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    font-family: Inter;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .our-services .our-services-boxes .my-div-service h2, .our-services .our-services-boxes .my-div-service .h2 {
-    font-family: Fira Sans Extra Condensed;
-    font-weight: 900;
+  .our-services .services-container .our-services-boxes .my-div-service h2, .our-services .services-container .our-services-boxes .my-div-service .h2 {
+    font-family: Inter;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
   }
 }
 /*Laptop*/
@@ -14192,9 +14255,9 @@ footer #footerBtn:hover p {
     gap: 20px;
   }
   .our-events .event-container .header-events {
-    width: 30%;
+    width: 350px;
     height: 100%;
-    left: 90px;
+    left: 40px;
     top: -140px;
   }
   .our-events .event-container .header-events h1, .our-events .event-container .header-events .h1 {
@@ -14206,6 +14269,7 @@ footer #footerBtn:hover p {
     margin: 0;
     padding: 0;
     color: white;
+    text-align: center;
   }
   .our-events .event-container .each-event {
     width: 100%;
@@ -14246,8 +14310,8 @@ footer #footerBtn:hover p {
   .our-events button {
     position: absolute;
     bottom: 30px;
-    height: 70px;
-    width: 200px;
+    height: 50px;
+    width: 150px;
     font-family: Inter;
     font-size: 15px;
     background: white;
@@ -14293,9 +14357,9 @@ footer #footerBtn:hover p {
     gap: 20px;
   }
   .our-events .event-container .header-events {
-    width: 30%;
+    width: 300px;
     height: 100%;
-    left: 60px;
+    left: 40px;
     top: -140px;
   }
   .our-events .event-container .header-events h1, .our-events .event-container .header-events .h1 {
@@ -14347,8 +14411,8 @@ footer #footerBtn:hover p {
   .our-events button {
     position: absolute;
     bottom: 30px;
-    height: 70px;
-    width: 200px;
+    height: 50px;
+    width: 150px;
     font-family: Inter;
     font-size: 15px;
     background: white;

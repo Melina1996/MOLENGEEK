@@ -15,6 +15,7 @@
 @media (min-width: 425px) and (max-width: 768px)
     header
         .navbar
+            position: relative
             .my-logo
                 width: 30%
                 .logo-img
@@ -28,19 +29,32 @@
                 display: none   
             .all-my-links
                 position: absolute
-                height: 200px
+                height: 400px
                 width: 100vw
-                top: 180px
+                top: 280px
                 right: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
-                background-color: white
+                background-color: transparent
                 z-index: 100
+                backdrop-filter: blur(12px)
+                -webkit-backdrop-filter: blur(8px)
 
                 display: flex
                 flex-direction: column
                 align-items: center
                 justify-content: center
+                gap: 5px
+                a
+                    color: black
+                .my-link-hover:hover
+                    color: #c8b747
+                .language-options
+                    a
+                        color: #c8b747
+                .hide
+                    display: none
+
             .hide
                 display: none
 
@@ -71,19 +85,31 @@
             .my-bckg-burger
             .all-my-links
                 position: absolute
+                height: 400px
                 width: 100vw
-                top: 150px
+                top: 250px
                 right: 50%
                 left: 50%
                 transform: translate(-50%, -50%)
-                background-color: white
+                background-color: transparent
+                z-index: 100
+                // box-shadow: 0px 15px 10px -15px #111
+                backdrop-filter: blur(12px)
 
                 display: flex
                 flex-direction: column
                 align-items: center
                 justify-content: center
+                gap: 5px
+                a
+                    color: black
+                .my-link-hover:hover
+                    color: #c8b747
+                .language-options
+                    a
+                        color: #c8b747
+                .hide
+                    display: none
+
             .hide
                 display: none
-
-                
-                

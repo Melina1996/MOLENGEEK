@@ -69,7 +69,17 @@ export function dropDown(){
 export function myBurger(){
     INSTANCE.myBurger.addEventListener("click",()=>{
         INSTANCE.allMyLinks.classList.toggle("hide")
-        console.log("hi")
+
+        let myLanguageOptions = document.querySelector(".language-options")
+
+        let myLanguages = document.querySelector(".languages")
+
+        myLanguageOptions.classList.add("hide")
+
+        myLanguages.addEventListener("click",()=>{
+          myLanguageOptions.classList.toggle("hide")
+        })
+
       })
 }
 
