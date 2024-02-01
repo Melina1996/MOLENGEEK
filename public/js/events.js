@@ -18,7 +18,7 @@ document.querySelectorAll(".my-icon")[1].src = "../assets/img/twitter.png"
 
 document.querySelectorAll(".my-icon")[2].src = "../assets/img/instagram.png"
 
-document.querySelectorAll(".my-icon")[3].src = "../assets/img/linkedin.png"
+document.querySelectorAll(".my-icon")[3].src = "../assets/img/linkedIn.png"
 
 //FOOTER Logo Molengeek
 

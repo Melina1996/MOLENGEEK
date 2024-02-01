@@ -12609,9 +12609,13 @@ footer #footerBtn:hover p {
   font-family: Inter;
   font-size: 18px;
 }
+.courses-options .container-courses .description-courses .general-description p span {
+  font-weight: bolder;
+}
 .courses-options .container-courses .description-courses .courses-btns {
   height: 50px;
   width: 100%;
+  margin-top: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -13461,6 +13465,99 @@ footer #footerBtn:hover p {
   height: 350px;
   width: 100%;
   position: absolute;
+}
+
+.my-form {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-form .my-form-container {
+  width: 80%;
+  height: 90%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.my-form .my-form-container .line-form {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.my-form .my-form-container .line-form input {
+  width: 600px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.my-form .my-form-container .line-form .my-subject {
+  width: 1200px;
+}
+.my-form .my-form-container .line-form ::placeholder {
+  color: #c8b747;
+  font-family: Inter;
+}
+.my-form .my-form-container .line-form input:focus {
+  outline: none;
+  font-family: Inter;
+  letter-spacing: 3px;
+}
+.my-form .my-form-container .my-textarea {
+  width: 100%;
+}
+.my-form .my-form-container .my-textarea textarea {
+  width: 100%;
+  border: none;
+  border: 1px solid black;
+}
+.my-form .my-form-container .my-textarea textarea:focus {
+  outline: none;
+  font-family: Inter;
+  letter-spacing: 3px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.my-form .my-form-container .my-textarea ::placeholder {
+  color: #c8b747;
+  letter-spacing: 3px;
+  font-family: Inter;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.my-form .my-form-container button {
+  height: 48px;
+  width: 100px;
+  margin-right: 15px;
+  font-family: Inter;
+  font-size: 16px;
+  background: white;
+  letter-spacing: 1px;
+  border: 3px solid black;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-form .my-form-container button p {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.my-form .my-form-container button:hover {
+  background-color: #c8b747;
+}
+.my-form .my-form-container button:hover p {
+  color: white;
 }
 
 /*Laptop*/
@@ -15636,6 +15733,104 @@ footer #footerBtn:hover p {
     color: #c8b747;
     font-size: 40px;
     letter-spacing: 3px;
+  }
+}
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) {
+  .my-form {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-form .my-form-container {
+    width: 80%;
+    height: 90%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+  }
+  .my-form .my-form-container .line-form {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .my-form .my-form-container .line-form input {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background: none;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .my-form .my-form-container .line-form .my-subject {
+    width: 100%;
+  }
+  .my-form .my-form-container .line-form ::placeholder {
+    color: #c8b747;
+    font-family: Inter;
+    font-size: 14px;
+  }
+  .my-form .my-form-container .line-form input:focus {
+    outline: none;
+    font-family: Inter;
+    letter-spacing: 3px;
+  }
+  .my-form .my-form-container .my-textarea {
+    width: 100%;
+  }
+  .my-form .my-form-container .my-textarea textarea {
+    width: 100%;
+    border: none;
+    border: 1px solid black;
+  }
+  .my-form .my-form-container .my-textarea textarea:focus {
+    outline: none;
+    font-family: Inter;
+    letter-spacing: 3px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+  .my-form .my-form-container .my-textarea ::placeholder {
+    color: #c8b747;
+    letter-spacing: 3px;
+    font-family: Inter;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 14px;
+  }
+  .my-form .my-form-container button {
+    height: 48px;
+    width: 100px;
+    margin-right: 15px;
+    font-family: Inter;
+    font-size: 16px;
+    background: white;
+    letter-spacing: 1px;
+    border: 3px solid black;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-form .my-form-container button p {
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  .my-form .my-form-container button:hover {
+    background-color: #c8b747;
+  }
+  .my-form .my-form-container button:hover p {
+    color: white;
   }
 }
 

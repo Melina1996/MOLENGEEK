@@ -38,7 +38,7 @@
             <div class="my-links-center">
 
                 <a href="./courses.html">COURSES</a>
-                <a href="/">COWORKING</a>
+                <a href="./coworking.html">COWORKING</a>
                 <a href="./events.html">AGENDA</a>
                 <a href="./about.html">ABOUT</a>
                 <a href="./jobs.html">JOBS</a>
@@ -53,14 +53,14 @@
                       <a href="#">NL</a>
                     </div>
                   </div>
-                  <button class="my-btn-nav"><p><a href="./contact.html">CONTACT</a></p></button>
+                <button class="my-btn-nav" href="/"><p>CONTACT</p></button>
 
             </div>
 
             <div class="all-my-links hide">
 
                 <a href="./courses.html" class="my-link-hover">COURSES</a>
-                <a href="/" class="my-link-hover">COWORKING</a>
+                <a href="./coworking.html" class="my-link-hover">COWORKING</a>
                 <a href="./events.html"class="my-link-hover">AGENDA</a>
                 <a href="./about.html"class="my-link-hover">ABOUT</a>
                 <a href="./jobs.html"class="my-link-hover">JOBS</a>
@@ -70,7 +70,7 @@
                     <a href="#">FR</a>
                     <a href="#">NL</a>
                 </div>
-                <a href="./contact.html" class="my-link-hover">CONTACT</a>
+                <a href="/" class="my-link-hover">CONTACT</a>
 
             </div>
 
@@ -83,89 +83,43 @@
 
         <section class="banner-slogan">
 
-            <h1>CHANGE SETTING <span>.</span></h1>
+            <h1>REACH OUT <span>.</span></h1>
 
         </section>
 
-        <section class="introduction-coworking">
+        <section class="my-form">
 
-            <div class="my-container-coworking">
+            <div class="my-form-container">
 
-                <div class="text-left">
+                <div class="line-form">
 
-                    <h1>COWORKING SPACE</h1>
+                    <input type="text" placeholder="LAST NAME">
 
-                </div>
-
-                <div class="text-right">
-
-                    <h1>"Le cowork", as it's known, is the head office of the MolenGeek community, and welcomes anyone interested in learning web development, as well as entrepreneurs who want to launch their own startup in the digital sector, and trainees from the Coding School. <br><br>Every day, coworkers meet new people, network, forge professional links, learn new entrepreneurial techniques and help each other out.</h1>
-
-
-                </div>
-                
-            </div>
-
-        </section>
-
-        <section class="slogan-and-photo">
-
-            <div class="my-img-coworking">
-
-                <img src="../assets/img/coworking.jpeg" alt="">
-
-            </div>
-
-            <div class="my-slogan-coworking">
-
-                <h1>A shared workspace open to all <span>.</span></h1>
-
-            </div>
-
-        </section>
-
-        <section class="description-coworking">
-
-            <div class="row all-my-descriptions">
-                
-                <div class="col">
-
-                    <p>The coworking space is equipped with everything you need to work in the best possible conditions (tea, coffee, fully-equipped kitchen, lockers, printers, high-speed wifi connection, etc.).</p>
+                    <input type="text" placeholder="FIRST NAME">
 
                 </div>
 
-                <div class="col list">
+                <div class="line-form">
+                    
+                    <input type="email" placeholder="EMAIL">
 
-                    <p>Members can contribute by getting involved in the community in a variety of ways:</p>
-
-                    <ul>
-                        <li>taking part in events</li>
-                        <li>brainstorm with other members</li>
-                        <li>sharing knowledge and skills</li>
-                        <li>collaborate with other coworkers</li>
-                        <li>helping each other</li>
-                        <li>and lots more...</li>
-                    </ul>
-
-                </div>
-                
-                <div class="col opening-hours">
-
-                    <h1>OPENING HOURS</h1>
-
-                    <p>The coworking space is open <span>Monday to Friday</span> from <span>8am to 6pm</span>, <span>Saturdays and Sundays</span> from <span>10am to 6pm</span>, and outside these hours on request only.</p>
+                    <input type="tel" placeholder="PHONE">
 
                 </div>
 
-            </div>
+                <div class="line-form">
 
-        </section>
+                    <input type="text" placeholder="SUBJECT" class="my-subject">
 
-        <section class="maps-section-coworking">
+                </div>
 
-            <div class="my-map">
+                <div class="my-textarea">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20148.579775684888!2d4.37263405!3d50.85760075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c275028d3%3A0xc7799151146ebf77!2sMolenGeek!5e0!3m2!1ses-419!2sbe!4v1701967836315!5m2!1ses-419!2sbe" class="my-map iframe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <textarea name="message" id="my-message" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+
+                </div>
+
+                <button><p>SEND</p></button>
 
             </div>
 
@@ -194,7 +148,7 @@
     </footer>
 
     <!-- link the js sheet  -->
-    <script src="../js/coworking.js" type="module"></script> 
+    <script src="../js/contact.js" type="module"></script> 
     <script src="../../node_modules/@popperjs/core/dist/umd/popper.js"></script> 
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
