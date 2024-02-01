@@ -116,8 +116,24 @@ let liThree = document.querySelector(".liThree")
 
 let liFour = document.querySelector(".liFour")
 
+function assignCourseDetails(course){
+
+  if(course.ageMax != null){
+    liOne.innerHTML = `<span>MAX AGE:</span> ${course.condition.ageMax}`
+    } else {
+      liOne.innerHTML = "<span>MAX AGE:</span> -"
+    }
+
+    liTwo.innerHTML = `<span>SCHEDULE:</span> ${course.condition.horaire}`
+
+    liThree.innerHTML = `<span>FEE:</span> ${course.condition.prix}`
+
+    liFour.innerHTML = `<span>SITUATION:</span> ${course.condition.situation}`
+}
+
 
 allDivsCourses.forEach(element => {
+  
     element.addEventListener("click",()=>{
       containerDivsCourses.classList.add("hide")
       sectionMoreDetails.classList.add("show")
@@ -125,71 +141,42 @@ allDivsCourses.forEach(element => {
 
       if(element.querySelector("h2").innerText == "CODING SCHOOL"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[0].nom
-        description.innerText = Object.values(data.formations.formationsLongues)[0].descriptif
+        description.innerText = Object.values(data.formations.formationsLongues)[0].descriptif.toUpperCase()
         duration.innerText = Object.values(data.formations.formationsLongues)[0].duree
 
-        liOne.innerText = Object.values(data.formations.formationsLongues)[0].condition.ageMax
-
-        liTwo.innerText = Object.values(data.formations.formationsLongues)[0].condition.horaire
-
-        liThree.innerText = Object.values(data.formations.formationsLongues)[0].condition.prix
-
-        liFour.innerText = Object.values(data.formations.formationsLongues)[0].condition.situation
-
+        assignCourseDetails(Object.values(data.formations.formationsLongues)[0])
 
       } else if(element.querySelector("h2").innerText == "DIGITAL MARKETING"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[1].nom
-        description.innerText = Object.values(data.formations.formationsLongues)[1].descriptif
+        description.innerText = Object.values(data.formations.formationsLongues)[1].descriptif.toUpperCase()
         duration.innerText = Object.values(data.formations.formationsLongues)[1].duree
 
-        liOne.innerText = Object.values(data.formations.formationsLongues)[1].condition.ageMax
+        assignCourseDetails(Object.values(data.formations.formationsLongues)[1])
 
-        liTwo.innerText = Object.values(data.formations.formationsLongues)[1].condition.horaire
-
-        liThree.innerText = Object.values(data.formations.formationsLongues)[1].condition.prix
-
-        liFour.innerText = Object.values(data.formations.formationsLongues)[1].condition.situation
 
       } else if(element.querySelector("h2").innerText == "WEBMASTER 360"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[2].nom
-        description.innerText = Object.values(data.formations.formationsLongues)[2].descriptif
+        description.innerText = Object.values(data.formations.formationsLongues)[2].descriptif.toUpperCase()
         duration.innerText = Object.values(data.formations.formationsLongues)[2].duree
 
-        liOne.innerText = Object.values(data.formations.formationsLongues)[2].condition.ageMax
-
-        liTwo.innerText = Object.values(data.formations.formationsLongues)[2].condition.horaire
-
-        liThree.innerText = Object.values(data.formations.formationsLongues)[2].condition.prix
-
-        liFour.innerText = Object.values(data.formations.formationsLongues)[2].condition.situation
+        assignCourseDetails(Object.values(data.formations.formationsLongues)[2])
+        
 
       } else if(element.querySelector("h2").innerText == "AWS RE/START"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[3].nom
-        description.innerText = Object.values(data.formations.formationsLongues)[3].descriptif
+        description.innerText = Object.values(data.formations.formationsLongues)[3].descriptif.toUpperCase()
         duration.innerText = Object.values(data.formations.formationsLongues)[3].duree
 
-        liOne.innerText = Object.values(data.formations.formationsLongues)[3].condition.ageMax
-
-        liTwo.innerText = Object.values(data.formations.formationsLongues)[3].condition.horaire
-
-        liThree.innerText = Object.values(data.formations.formationsLongues)[3].condition.prix
-
-        liFour.innerText = Object.values(data.formations.formationsLongues)[3].condition.situation
+        assignCourseDetails(Object.values(data.formations.formationsLongues)[3])
 
       } else if(element.querySelector("h2").innerText == "SALESFORCE ADMINISTRATOR"){
         nameCourse.innerText = Object.values(data.formations.formationsLongues)[4].nom
-        description.innerText = Object.values(data.formations.formationsLongues)[4].descriptif
+        description.innerText = Object.values(data.formations.formationsLongues)[4].descriptif.toUpperCase()
         duration.innerText = Object.values(data.formations.formationsLongues)[4].duree
 
-        liOne.innerText = Object.values(data.formations.formationsLongues)[4].condition.ageMax
+        assignCourseDetails(Object.values(data.formations.formationsLongues)[4])
 
-        liTwo.innerText = Object.values(data.formations.formationsLongues)[4].condition.horaire
-
-        liThree.innerText = Object.values(data.formations.formationsLongues)[4].condition.prix
-
-        liFour.innerText = Object.values(data.formations.formationsLongues)[4].condition.situation
       }
-
 
     })
 });

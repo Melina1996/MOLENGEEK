@@ -1,0 +1,57 @@
+/*Mobile M&L*/
+@media (min-width: 321px) and (max-width: 425px) 
+
+    .our-partners
+        width: 100%
+        height: 300px
+
+        display: flex
+        justify-content: center
+        align-items: center
+        .my-carousel
+            width: 90%
+            height: 100%
+            position: relative
+            ul
+                width: 100%
+                height: 100%
+                
+                margin: 0
+                padding: 0
+                list-style: none
+                .slide
+                    width: 100%
+                    height: 100%
+                    position: absolute
+                    inset: 0
+                    opacity: 0
+                    transition: 0.2s opacity ease-in-out
+
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    img
+                        max-width: 250px
+                        max-height: 150px
+                        object-fit: cover
+                        object-position: center
+                .slide[data-active]
+                    opacity: 1
+            .carousel-btn
+                position: absolute
+                z-index: 2
+                background: none
+                border: none
+                top: 50%
+                transform: translateY(-50%)
+                cursor: pointer
+            .prev
+                left: 0.1rem
+            .next
+                right: 0.1rem
+                
+
+            
+
+
+

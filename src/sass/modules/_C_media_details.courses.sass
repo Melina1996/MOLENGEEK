@@ -2,6 +2,10 @@
 @media (min-width: 768px) and (max-width: 1024px) 
 
     .details-courses
+        .details-courses-container
+            width: 95%
+            .our-courses-boxes, .row
+                width: 95%
         .container-more-details
             .more-details-on-course
                 width: 65%
@@ -42,17 +46,33 @@
                 height: 100%
                 width: 90%
                 flex-direction: column
-
         .container-more-details
+            height: 550px
             .more-details-on-course
+                padding-top: 40px
                 width: 80%
-                height: 80%
+                height: 100%
                 background: white
                 position: absolute
                 top: 50%
                 left: 50%
                 transform: translate(-50%,-50%)
+                .name-course
+                    margin-bottom: 5px
+                    height: 80px
+                    h1
+                        font-size: 35px
                 .all-my-details
+                    height: 200px
+                    .description
+                        width: 90%
+                        height: 80px
+                        align-items: center
                     .duration-and-requirements
                         flex-direction: column
                         width: 80%
+                        max-height: 100px
+                        .duration
+                            width: 100%
+                        .requirements
+                            width: 100%
